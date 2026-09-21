@@ -1,0 +1,12 @@
+
+.DS_Store
+Thumbs.db
+
+.vscode/*
+!.vscode/settings.json
+
+*.zip
+
+*~
+*.bak
+*.swp
