@@ -1,7 +1,0 @@
-{
-  "files.associations": {
-    "*.mcfunction": "mcfunction"
-  },
-  "editor.rulers": [80],
-  "editor.renderWhitespace": "boundary"
-}
