@@ -51,7 +51,7 @@ This repo is **not a standalone, drop-in datapack.** It's tightly coupled to a s
 
 ## License
 
-This project is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+"WarZone Datapack" © 2026 by lilDorito is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 You are free to share and adapt this datapack for non-commercial purposes, as long as you credit the original author and license any derivative work under the same terms. See the [LICENSE](LICENSE) file for full details.
 
