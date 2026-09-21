@@ -15,7 +15,7 @@ This repo is **not a standalone, drop-in datapack.** It's tightly coupled to a s
 
 - Weapon categories: assault rifles, LMGs, pistols, rifles, shotguns, SMGs, snipers (`functions/ar`, `lmg`, `pistol`, `rifle`, `shotgun`, `smg`, `sniper`)
 - Kits: start kit, C4, drones, grenades, Igla, Javelin, mines, MLRS, mortar, RPG, thumper (`functions/kit`)
-- Vehicles: ground vehicles, 3 helicopters, boats, and 22 fixed-wing aircraft (`functions/vehicles`, `heli`, `boat`, `aircraft`)
+- Vehicles: 8 ground vehicles, 3 helicopters, 2 boats, and 22 fixed-wing aircraft (`functions/vehicles`, `heli`, `boat`, `aircraft`)
 - Cosmetic skins (`functions/skin`)
 - Admin tooling: debug mode, scoreboard setup, cooldown resets, map selection, fairplay checks for Xaero's map (`functions/admin`)
 
