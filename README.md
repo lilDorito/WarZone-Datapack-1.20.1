@@ -6,7 +6,7 @@ This repo is **not a standalone, drop-in datapack.** It's tightly coupled to a s
 
 ## Gamemodes
 
-- **FFA** — free-for-all (`admin/ffa/`)
+- **FFA** - free-for-all (`admin/ffa/`)
 - **TDM2 / TDM4** - 2-team and 4-team deathmatch, with per-team spawn sets and kill-tracking advancements (`admin/tdm/`)
 - **Gun Game** - 20 weapon stages, auto-advance on kill (`admin/gungame/`)
 - **Warzone** - beacon capture mode: teams locate, place, and defend beacons per zone, tracked via predicates and scoreboard monitoring (`admin/warzone/`)
