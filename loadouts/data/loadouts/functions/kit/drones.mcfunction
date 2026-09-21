@@ -35,6 +35,6 @@ give @s superbwarfare:monitor 2
 
 tellraw @s {"text":"[✔] Drones kit received!","color":"green"}
 
-execute if score #map map matches 13 run scoreboard players set @s drones_cd 36000
+execute if score #map map matches 13 run scoreboard players set @s drone_cd 36000
 execute if score #map map matches 13 run return 0
 scoreboard players set @s drone_cd 12000
