@@ -49,5 +49,3 @@ execute unless data entity @s Inventory[{Slot:-106b,id:"minecraft:cooked_beef"}]
 
 tellraw @s {"text":"[✔] Inventory cleaned!","color":"green"}
 playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1
-
-

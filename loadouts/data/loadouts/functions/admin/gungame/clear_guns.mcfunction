@@ -1,4 +1,4 @@
-# Strips every Gun Game weapon + every ammo type, regardless of current stage
+# Strips every Gun Game weapon + every ammo type, regardless of current stage.
 clear @s superbwarfare:aa_12
 clear @s superbwarfare:ak_12
 clear @s superbwarfare:ak_47

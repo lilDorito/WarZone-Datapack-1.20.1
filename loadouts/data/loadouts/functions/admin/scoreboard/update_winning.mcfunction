@@ -1,6 +1,3 @@
-# WarZone: once a beacon is destroyed the winner is locked in by that,
-# not by kill count, and stays displayed even if the losing team out-killed
-# the winner.
 execute if score #game match_mode matches 6 if score #game wz_state matches 2 if score #game wz_winner matches 1 run team modify WinRow prefix ["",{"text":"Winner: ","color":"yellow","bold":true},{"text":"[Alpha] Red","color":"dark_red"}]
 execute if score #game match_mode matches 6 if score #game wz_state matches 2 if score #game wz_winner matches 2 run team modify WinRow prefix ["",{"text":"Winner: ","color":"yellow","bold":true},{"text":"[Bravo] Blue","color":"blue"}]
 execute if score #game match_mode matches 6 if score #game wz_state matches 2 run return 0
