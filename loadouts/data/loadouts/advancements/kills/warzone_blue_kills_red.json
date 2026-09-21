@@ -1,0 +1,12 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": { "team": "Blue" },
+        "entity": { "type": "minecraft:player", "team": "Red" }
+      }
+    }
+  },
+  "rewards": { "function": "loadouts:admin/kills/warzone_blue_kills_red" }
+}

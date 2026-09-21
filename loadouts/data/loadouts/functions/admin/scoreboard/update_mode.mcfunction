@@ -1,0 +1,7 @@
+execute if score #game match_mode matches 0 run team modify ModeRow prefix ["",{"text":"Mode: ","color":"yellow","bold":true},{"text":"None","color":"gray"}]
+execute if score #game match_mode matches 1 run team modify ModeRow prefix ["",{"text":"Mode: ","color":"yellow","bold":true},{"text":"TDM2","color":"gray"}]
+execute if score #game match_mode matches 2 run team modify ModeRow prefix ["",{"text":"Mode: ","color":"yellow","bold":true},{"text":"FFA","color":"gray"}]
+execute if score #game match_mode matches 3 run team modify ModeRow prefix ["",{"text":"Mode: ","color":"yellow","bold":true},{"text":"TDM4","color":"gray"}]
+execute if score #game match_mode matches 4 run team modify ModeRow prefix ["",{"text":"Mode: ","color":"yellow","bold":true},{"text":"Vehicles","color":"gray"}]
+execute if score #game match_mode matches 5 run team modify ModeRow prefix ["",{"text":"Mode: ","color":"yellow","bold":true},{"text":"Gun Game","color":"gray"}]
+execute if score #game match_mode matches 6 run team modify ModeRow prefix ["",{"text":"Mode: ","color":"yellow","bold":true},{"text":"WarZone","color":"gray"}]

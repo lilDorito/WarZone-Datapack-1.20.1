@@ -1,0 +1,16 @@
+execute unless entity @a[team=Red] as @a[sort=random,limit=1,team=] run team join Red @s
+execute unless entity @a[team=Blue] as @a[sort=random,limit=1,team=] run team join Blue @s
+execute unless entity @a[team=Green] as @a[sort=random,limit=1,team=] run team join Green @s
+execute unless entity @a[team=Yellow] as @a[sort=random,limit=1,team=] run team join Yellow @s
+execute unless entity @a[team=Aqua] as @a[sort=random,limit=1,team=] run team join Aqua @s
+execute unless entity @a[team=Gold] as @a[sort=random,limit=1,team=] run team join Gold @s
+execute unless entity @a[team=LightPurple] as @a[sort=random,limit=1,team=] run team join LightPurple @s
+execute unless entity @a[team=White] as @a[sort=random,limit=1,team=] run team join White @s
+execute unless entity @a[team=LightRed] as @a[sort=random,limit=1,team=] run team join LightRed @s
+execute unless entity @a[team=DarkBlue] as @a[sort=random,limit=1,team=] run team join DarkBlue @s
+execute unless entity @a[team=DarkGreen] as @a[sort=random,limit=1,team=] run team join DarkGreen @s
+execute unless entity @a[team=DarkPurple] as @a[sort=random,limit=1,team=] run team join DarkPurple @s
+execute unless entity @a[team=DarkAqua] as @a[sort=random,limit=1,team=] run team join DarkAqua @s
+execute unless entity @a[team=Gray] as @a[sort=random,limit=1,team=] run team join Gray @s
+execute unless entity @a[team=DarkGray] as @a[sort=random,limit=1,team=] run team join DarkGray @s
+execute unless entity @a[team=Black] as @a[sort=random,limit=1,team=] run team join Black @s

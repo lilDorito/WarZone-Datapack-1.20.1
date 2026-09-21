@@ -1,0 +1,12 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": { "team": "Yellow" },
+        "entity": { "type": "minecraft:player", "team": "Blue" }
+      }
+    }
+  },
+  "rewards": { "function": "loadouts:admin/kills/tdm4_yellow_kills_blue" }
+}

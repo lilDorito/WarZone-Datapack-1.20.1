@@ -1,0 +1,2 @@
+execute unless data storage loadouts:spawns Red run tellraw @s {"text":"[!] Red spawn not set, using default.","color":"gray"}
+execute if data storage loadouts:spawns Red run function loadouts:admin/tdm/spawns/apply_red_spawn_go

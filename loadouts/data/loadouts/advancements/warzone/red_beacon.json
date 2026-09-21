@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "player": { "team": "Red" },
+        "location": [
+          {
+            "block": "minecraft:beacon",
+            "condition": "minecraft:block_state_property"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": { "function": "loadouts:admin/warzone/red_beacon_placed" }
+}

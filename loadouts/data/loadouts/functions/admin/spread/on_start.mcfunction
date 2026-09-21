@@ -1,0 +1,12 @@
+execute if score #map map matches 1 run spreadplayers -213 1283 9 85 false @a
+execute if score #map map matches 2 run spreadplayers 302 1231 7 70 false @a
+execute if score #map map matches 3 run spreadplayers 506 1394 9 90 false @a
+execute if score #map map matches 4 run spreadplayers 672 1145 8 80 false @a
+execute if score #map map matches 5 run spreadplayers 1596 1058 7 65 false @a
+execute if score #map map matches 6 run spreadplayers 839 1003 7 70 false @a
+execute if score #map map matches 7 run spreadplayers 201 24 20 220 false @a
+execute if score #map map matches 8 run spreadplayers 1372 894 7 70 false @a
+execute if score #map map matches 9 run spreadplayers -438 453 20 190 false @a
+execute if score #map map matches 10 run spreadplayers 20 -6 10 95 false @a
+execute if score #map map matches 11 run spreadplayers 181 1419 10 100 false @a
+execute if score #map map matches 12 run spreadplayers 616 950 6 60 false @a

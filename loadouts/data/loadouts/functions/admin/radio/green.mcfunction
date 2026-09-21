@@ -1,0 +1,3 @@
+execute if entity @s[nbt={SelectedItem:{id:"walkietalkie:netherite_walkietalkie"}}] run item replace entity @s weapon.mainhand with walkietalkie:netherite_walkietalkie{"walkietalkie.canal":75,"walkietalkie.mute":0b,"walkietalkie.activate":1b}
+
+execute if entity @s[nbt={Inventory:[{Slot:-106b,id:"walkietalkie:netherite_walkietalkie"}]}] run item replace entity @s weapon.offhand with walkietalkie:netherite_walkietalkie{"walkietalkie.canal":75,"walkietalkie.mute":0b,"walkietalkie.activate":1b}
