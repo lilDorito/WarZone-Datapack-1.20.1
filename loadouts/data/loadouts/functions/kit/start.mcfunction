@@ -8,6 +8,7 @@ clear @s superbwarfare:medical_kit
 clear @s superbwarfare:armor_plate
 clear @s superbwarfare:parachute
 clear @s minecraft:dirt
+clear @s minecraft:obsidian
 clear @s minecraft:netherite_pickaxe{Enchantments:[{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:efficiency",lvl:5s}]}
 clear @s superbwarfare:knife
 give @s minecraft:cooked_beef 16
@@ -22,6 +23,8 @@ execute if score #map map matches 7 run give @s superbwarfare:large_battery_pack
 execute if score #map map matches 9 run give @s superbwarfare:large_battery_pack{Energy:20000000} 2
 execute if score #map map matches 11 run give @s superbwarfare:large_battery_pack{Energy:20000000} 2
 execute if score #map map matches 13 run give @s superbwarfare:large_battery_pack{Energy:20000000} 2
+
+execute if score #map map matches 13 run give @s minecraft:obsidian 3
 
 tag @s remove armor_light
 
