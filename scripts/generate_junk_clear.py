@@ -10,6 +10,7 @@ ALLOWED_ITEMS = [
     "minecraft:cooked_beef",
     "minecraft:dirt",
     "minecraft:netherite_pickaxe",
+    "minecraft:obsidian",
 
     # Vehicles
     "mcsp:bmd_4_camo_spawn_item",
