@@ -11,6 +11,7 @@ ALLOWED_ITEMS = [
     "minecraft:dirt",
     "minecraft:netherite_pickaxe",
     "minecraft:obsidian",
+    "minecraft:beacon",
 
     # Vehicles
     "mcsp:bmd_4_camo_spawn_item",
