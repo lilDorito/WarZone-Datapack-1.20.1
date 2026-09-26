@@ -32,5 +32,4 @@ execute if score @s temp_count matches ..16 run give @s superbwarfare:small_rock
 
 tellraw @s {"text":"[✔] AH-6 Little Bird loadout received!","color":"green"}
 
-execute unless score #game match_mode matches 4 if score #map map matches 13 run scoreboard players set @s heli_cd 24000
-execute unless score #game match_mode matches 4 unless score #map map matches 13 run scoreboard players set @s heli_cd 12000
+execute unless score #game match_mode matches 4 run scoreboard players set @s heli_cd 12000

@@ -37,5 +37,4 @@ give @s superbwarfare:small_shell 256
 
 tellraw @s {"text":"[✔] Ural Typhoon loadout received!","color":"green"}
 
-execute unless score #game match_mode matches 4 if score #map map matches 13 run scoreboard players set @s vehicle_cd 24000
-execute unless score #game match_mode matches 4 unless score #map map matches 13 run scoreboard players set @s vehicle_cd 8000
+execute unless score #game match_mode matches 4 run scoreboard players set @s vehicle_cd 8000

@@ -17,6 +17,4 @@ execute unless entity @s[tag=camo_2] run item replace entity @s armor.head with 
 
 tellraw @s {"text":"[✔] Heavy armor equipped!","color":"green"}
 
-execute if score #map map matches 12 run scoreboard players set @s armor_type_cd 36000
-execute if score #map map matches 12 run return 0
 scoreboard players set @s armor_type_cd 12000

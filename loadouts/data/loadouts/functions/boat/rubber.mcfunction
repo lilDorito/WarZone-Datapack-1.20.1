@@ -25,5 +25,4 @@ give @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",Ent
 
 tellraw @s {"text":"[✔] Rubber Boat loadout received!","color":"green"}
 
-execute unless score #game match_mode matches 4 if score #map map matches 13 run scoreboard players set @s boat_cd 18000
-execute unless score #game match_mode matches 4 unless score #map map matches 13 run scoreboard players set @s boat_cd 6000
+execute unless score #game match_mode matches 4 run scoreboard players set @s boat_cd 6000

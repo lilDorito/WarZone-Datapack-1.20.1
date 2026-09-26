@@ -38,6 +38,4 @@ give @s superbwarfare:mortar_shell 16
 
 tellraw @s {"text":"[✔] Mortar kit received!","color":"green"}
 
-execute if score #map map matches 13 run scoreboard players set @s mortar_cd 36000
-execute if score #map map matches 13 run return 0
 scoreboard players set @s mortar_cd 12000

@@ -54,5 +54,4 @@ execute if score @s temp_count matches ..16 run give @s superbwarfare:small_rock
 
 tellraw @s {"text":"[✔] MQ-9 Reaper loadout received!","color":"green"}
 
-execute unless score #game match_mode matches 4 if score #map map matches 13 run scoreboard players set @s aircraft_cd 24000
-execute unless score #game match_mode matches 4 unless score #map map matches 13 run scoreboard players set @s aircraft_cd 8000
+execute unless score #game match_mode matches 4 run scoreboard players set @s aircraft_cd 8000

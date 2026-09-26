@@ -15,6 +15,4 @@ item replace entity @s armor.head with mcsp:opscore_helmet{display:{Name:'{"text
 
 tellraw @s {"text":"[✔] Light armor equipped!","color":"green"}
 
-execute if score #map map matches 12 run scoreboard players set @s armor_type_cd 36000
-execute if score #map map matches 12 run return 0
 scoreboard players set @s armor_type_cd 12000

@@ -35,5 +35,4 @@ give @s mcsp:humvee_desert_standart_spawn_item 1
 
 tellraw @s {"text":"[✔] Humvee loadout received!","color":"green"}
 
-execute unless score #game match_mode matches 4 if score #map map matches 13 run scoreboard players set @s vehicle_cd 18000
-execute unless score #game match_mode matches 4 unless score #map map matches 13 run scoreboard players set @s vehicle_cd 6000
+execute unless score #game match_mode matches 4 run scoreboard players set @s vehicle_cd 6000

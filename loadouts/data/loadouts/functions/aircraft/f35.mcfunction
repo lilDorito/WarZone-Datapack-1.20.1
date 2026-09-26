@@ -54,5 +54,4 @@ give @s ashvehicle:jassm_item 8
 
 tellraw @s {"text":"[✔] F-35 Lightning II loadout received!","color":"green"}
 
-execute unless score #game match_mode matches 4 if score #map map matches 13 run scoreboard players set @s aircraft_cd 48000
-execute unless score #game match_mode matches 4 unless score #map map matches 13 run scoreboard players set @s aircraft_cd 16000
+execute unless score #game match_mode matches 4 run scoreboard players set @s aircraft_cd 16000

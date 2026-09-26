@@ -6,5 +6,5 @@ execute store result storage loadouts:spawns Red.z double 1 run data get entity 
 wp remove minecraft:overworld Spawns "Red Spawn"
 wp add ~ ~ ~ Spawns "Red Spawn" "R" dark_red 0 true
 
-tellraw @s {"text":"[✔] Red spawn set!","color":"red"}
+tellraw @s {"text":"[✔] Red spawn set!","color":"dark_red"}
 playsound entity.experience_orb.pickup master @s ~ ~ ~ 1 1

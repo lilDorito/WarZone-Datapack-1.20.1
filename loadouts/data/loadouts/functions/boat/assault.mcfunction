@@ -27,5 +27,4 @@ give @s superbwarfare:heavy_ammo 128
 
 tellraw @s {"text":"[✔] Assault Boat loadout received!","color":"green"}
 
-execute unless score #game match_mode matches 4 if score #map map matches 13 run scoreboard players set @s boat_cd 24000
-execute unless score #game match_mode matches 4 unless score #map map matches 13 run scoreboard players set @s boat_cd 8000
+execute unless score #game match_mode matches 4 run scoreboard players set @s boat_cd 8000

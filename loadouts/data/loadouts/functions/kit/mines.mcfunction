@@ -40,6 +40,4 @@ give @s superbwarfare:blu_43_mine 8
 
 tellraw @s {"text":"[✔] Mines kit received!","color":"green"}
 
-execute if score #map map matches 13 run scoreboard players set @s mine_cd 36000
-execute if score #map map matches 13 run return 0
 scoreboard players set @s mine_cd 12000

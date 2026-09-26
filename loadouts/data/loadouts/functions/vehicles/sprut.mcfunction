@@ -37,5 +37,4 @@ give @s mcsp:sprut_camo_spawn_item 1
 
 tellraw @s {"text":"[✔] 2S25 Sprut-SD loadout received!","color":"green"}
 
-execute unless score #game match_mode matches 4 if score #map map matches 13 run scoreboard players set @s vehicle_cd 36000
-execute unless score #game match_mode matches 4 unless score #map map matches 13 run scoreboard players set @s vehicle_cd 12000
+execute unless score #game match_mode matches 4 run scoreboard players set @s vehicle_cd 12000

@@ -38,6 +38,4 @@ give @s superbwarfare:grenade_40mm 16
 
 tellraw @s {"text":"[✔] Thumper M-79 kit received!","color":"green"}
 
-execute if score #map map matches 13 run scoreboard players set @s thumper_cd 36000
-execute if score #map map matches 13 run return 0
 scoreboard players set @s thumper_cd 12000

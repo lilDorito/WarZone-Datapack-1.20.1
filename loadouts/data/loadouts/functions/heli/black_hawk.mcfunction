@@ -32,5 +32,4 @@ give @s superbwarfare:small_rocket 32
 
 tellraw @s {"text":"[✔] MH-60M Black Hawk loadout received!","color":"green"}
 
-execute unless score #game match_mode matches 4 if score #map map matches 13 run scoreboard players set @s heli_cd 36000
-execute unless score #game match_mode matches 4 unless score #map map matches 13 run scoreboard players set @s heli_cd 12000
+execute unless score #game match_mode matches 4 run scoreboard players set @s heli_cd 12000

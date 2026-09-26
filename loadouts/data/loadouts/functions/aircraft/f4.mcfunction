@@ -53,5 +53,4 @@ give @s ashvehicle:aam_4_item 4
 
 tellraw @s {"text":"[✔] F-4 Phantom II loadout received!","color":"green"}
 
-execute unless score #game match_mode matches 4 if score #map map matches 13 run scoreboard players set @s aircraft_cd 24000
-execute unless score #game match_mode matches 4 unless score #map map matches 13 run scoreboard players set @s aircraft_cd 8000
+execute unless score #game match_mode matches 4 run scoreboard players set @s aircraft_cd 8000

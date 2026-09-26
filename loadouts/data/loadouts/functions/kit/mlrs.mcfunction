@@ -36,6 +36,4 @@ give @s superbwarfare:medium_rocket_cm 4
 
 tellraw @s {"text":"[✔] MLRS kit received!","color":"green"}
 
-execute if score #map map matches 13 run scoreboard players set @s mlrs_cd 64000
-execute if score #map map matches 13 run return 0
 scoreboard players set @s mlrs_cd 24000

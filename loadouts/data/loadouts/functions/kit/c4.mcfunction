@@ -36,6 +36,4 @@ give @s superbwarfare:defuser 1
 
 tellraw @s {"text":"[✔] C4 kit received!","color":"green"}
 
-execute if score #map map matches 13 run scoreboard players set @s c4_cd 36000
-execute if score #map map matches 13 run return 0
 scoreboard players set @s c4_cd 12000

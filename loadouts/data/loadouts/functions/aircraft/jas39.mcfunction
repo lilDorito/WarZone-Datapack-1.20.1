@@ -53,5 +53,4 @@ give @s ashvehicle:aam_4_item 8
 
 tellraw @s {"text":"[✔] JAS 39E Gripen loadout received!","color":"green"}
 
-execute unless score #game match_mode matches 4 if score #map map matches 13 run scoreboard players set @s aircraft_cd 36000
-execute unless score #game match_mode matches 4 unless score #map map matches 13 run scoreboard players set @s aircraft_cd 12000
+execute unless score #game match_mode matches 4 run scoreboard players set @s aircraft_cd 12000

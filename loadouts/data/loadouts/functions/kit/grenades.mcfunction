@@ -40,6 +40,4 @@ give @s superbwarfare:m18_smoke_grenade 8
 
 tellraw @s {"text":"[✔] Grenades kit received!","color":"green"}
 
-execute if score #map map matches 13 run scoreboard players set @s grenade_cd 36000
-execute if score #map map matches 13 run return 0
 scoreboard players set @s grenade_cd 12000
