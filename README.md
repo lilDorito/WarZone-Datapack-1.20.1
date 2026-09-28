@@ -1,5 +1,10 @@
 # WarZone Datapack (1.20.1)
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Minecraft-1.20.1-3C8527?style=for-the-badge" alt="Minecraft 1.20.1" />
+  <img src="https://img.shields.io/badge/Forge-47.4.10-F58220?style=for-the-badge" alt="Forge 47.4.10" />
+</p>
+
 A Forge datapack powering a custom multiplayer combat project: Free-For-All, Team Deathmatch (2 and 4 teams), Gun Game, and a "Warzone" beacon-capture gamemode, on top of a full military loadout system (weapons, vehicles, aircraft, kits, and cosmetic skins).
 
 This repo is **not a standalone, drop-in datapack.** It's tightly coupled to a specific set of custom map builds (`base`, `duga`, `forest`, etc) that live in the project's world and are **not included here**. Without those builds, the functions that reference them (spawn points, zone predicates, map-select logic) have nothing to point at.
