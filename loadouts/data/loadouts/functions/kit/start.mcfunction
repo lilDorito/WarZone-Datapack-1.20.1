@@ -1,3 +1,11 @@
+execute unless score #game match_mode matches 1..6 run tellraw @s {"text":"[×] Loadout commands are disabled until the match starts.","color":"red"}
+execute unless score #game match_mode matches 1..6 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute unless score #game match_mode matches 1..6 run return 0
+
+execute if score #game match_mode matches 6 if score #game wz_state matches 0 run tellraw @s {"text":"[×] Loadout commands are disabled until both beacons are placed.","color":"red"}
+execute if score #game match_mode matches 6 if score #game wz_state matches 0 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute if score #game match_mode matches 6 if score #game wz_state matches 0 run return 0
+
 execute if entity @s[tag=has_started] run tellraw @s {"text":"[×] You have already received your start kit!","color":"red"}
 execute if entity @s[tag=has_started] run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
 execute if entity @s[tag=has_started] run return 0
@@ -25,6 +33,9 @@ execute if score #map map matches 11 run give @s superbwarfare:large_battery_pac
 execute if score #map map matches 13 run give @s superbwarfare:large_battery_pack{Energy:20000000} 2
 
 execute if score #map map matches 13 run give @s minecraft:obsidian 3
+
+execute if score #map map matches 13 run clear @s superbwarfare:artillery_indicator
+execute if score #map map matches 13 run give @s superbwarfare:artillery_indicator 1
 
 tag @s remove armor_light
 

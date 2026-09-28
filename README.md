@@ -14,7 +14,7 @@ This repo is **not a standalone, drop-in datapack.** It's tightly coupled to a s
 ## Loadout system
 
 - Weapon categories: assault rifles, LMGs, pistols, rifles, shotguns, SMGs, snipers (`functions/ar`, `lmg`, `pistol`, `rifle`, `shotgun`, `smg`, `sniper`)
-- Kits: start kit, C4, drones, grenades, Igla, Javelin, mines, MLRS, mortar, RPG, thumper (`functions/kit`)
+- Kits: start kit, C4, drones, grenades, Igla, Javelin, mines, MLRS, mortar, RPG, thumper, kamikaze/recon UAVs, ballistic missile, radar (`functions/kit`)
 - Vehicles: 8 ground vehicles, 3 helicopters, 2 boats, and 22 fixed-wing aircraft (`functions/vehicles`, `heli`, `boat`, `aircraft`)
 - Cosmetic skins (`functions/skin`)
 - Admin tooling: debug mode, scoreboard setup, cooldown resets, map selection, fairplay checks for Xaero's map (`functions/admin`)
@@ -26,6 +26,7 @@ This repo is **not a standalone, drop-in datapack.** It's tightly coupled to a s
   - [SuperbWarfare (SBW)](https://www.curseforge.com/minecraft/mc-mods/superbwarfare) - weapons, ammo, armor, consumables
   - [MCSP](https://www.curseforge.com/minecraft/mc-mods/mcsp-military-vehicle) - additional vehicles/gear addon for SBW (`mcsp:` namespace)
   - [AshVehicles](https://www.curseforge.com/minecraft/mc-mods/ashvehicles) - additional aircraft/munitions addon for SBW (`ashvehicle:` namespace)
+  - [Air Tactical Arsenal - WarZone](https://www.curseforge.com/minecraft/mc-mods/air-tactical-arsenal-warzone) - Shahed/Orlan/Iskander + radar, custom for of [Air Tactical Arsenal](https://modrinth.com/mod/air-tactical-arsenal-warzone) (`walkietalkie:` namespace)
   - [Walkie-Talkie](https://www.curseforge.com/minecraft/mc-mods/walkie-talkie) - comms item (`walkietalkie:` namespace)
   - [Thermal Imaging Goggles](https://www.curseforge.com/minecraft/mc-mods/thermal-imaging-goggles) - thermal vision item (`thermal_imaging_goggles:` namespace)
   - [Exoskeleton Armor](https://www.curseforge.com/minecraft/mc-mods/exoskeleton-armor) - exoskeleton items (`exoskeleton:` namespace)

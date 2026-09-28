@@ -1,3 +1,11 @@
+execute unless score #game match_mode matches 1..6 run tellraw @s {"text":"[×] Loadout commands are disabled until the match starts.","color":"red"}
+execute unless score #game match_mode matches 1..6 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute unless score #game match_mode matches 1..6 run return 0
+
+execute if score #game match_mode matches 6 if score #game wz_state matches 0 run tellraw @s {"text":"[×] Loadout commands are disabled until both beacons are placed.","color":"red"}
+execute if score #game match_mode matches 6 if score #game wz_state matches 0 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute if score #game match_mode matches 6 if score #game wz_state matches 0 run return 0
+
 execute as @s[scores={ar_ammo_cd=1..}] run scoreboard players operation @s ar_ammo_cd_sec = @s ar_ammo_cd
 execute as @s[scores={ar_ammo_cd=1..}] run scoreboard players operation @s ar_ammo_cd_sec /= ticks_divisor const
 execute as @s[scores={ar_ammo_cd=1..}] run tellraw @s ["",{"text":"[×] Rifle ammo on cooldown! ","color":"red"},{"score":{"name":"@s","objective":"ar_ammo_cd_sec"}},{"text":"s"}]

@@ -1,8 +1,10 @@
-execute as @s[scores={armor_cd=1..}] run scoreboard players operation @s armor_cd_sec = @s armor_cd
-execute as @s[scores={armor_cd=1..}] run scoreboard players operation @s armor_cd_sec /= ticks_divisor const
-execute as @s[scores={armor_cd=1..}] run tellraw @s ["",{"text":"[×] Armor repair on cooldown! ","color":"red"},{"score":{"name":"@s","objective":"armor_cd_sec"}},{"text":"s"}]
-execute as @s[scores={armor_cd=1..}] at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
-execute as @s[scores={armor_cd=1..}] run return 0
+execute unless score #game match_mode matches 1..6 run tellraw @s {"text":"[×] Loadout commands are disabled until the match starts.","color":"red"}
+execute unless score #game match_mode matches 1..6 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute unless score #game match_mode matches 1..6 run return 0
+
+execute if score #game match_mode matches 6 if score #game wz_state matches 0 run tellraw @s {"text":"[×] Loadout commands are disabled until both beacons are placed.","color":"red"}
+execute if score #game match_mode matches 6 if score #game wz_state matches 0 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute if score #game match_mode matches 6 if score #game wz_state matches 0 run return 0
 
 execute if entity @s[tag=armor_light] run item replace entity @s armor.chest with mcsp:vest_avs{display:{Name:'{"text":"Light Tac Vest"}'}}
 execute if entity @s[tag=armor_light] run item replace entity @s armor.head with mcsp:opscore_helmet{display:{Name:'{"text":"Light Tac Helmet"}'}}

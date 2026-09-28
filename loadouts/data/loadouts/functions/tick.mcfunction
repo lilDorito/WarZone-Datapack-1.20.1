@@ -10,6 +10,10 @@ scoreboard players remove @a[scores={drone_cd=1..}] drone_cd 1
 scoreboard players remove @a[scores={mortar_cd=1..}] mortar_cd 1
 scoreboard players remove @a[scores={grenade_cd=1..}] grenade_cd 1
 scoreboard players remove @a[scores={mlrs_cd=1..}] mlrs_cd 1
+scoreboard players remove @a[scores={radar_cd=1..}] radar_cd 1
+scoreboard players remove @a[scores={shahed_cd=1..}] shahed_cd 1
+scoreboard players remove @a[scores={orlan_cd=1..}] orlan_cd 1
+scoreboard players remove @a[scores={iskander_cd=1..}] iskander_cd 1
 
 # Refill
 
@@ -21,7 +25,6 @@ scoreboard players remove @a[scores={hg_ammo_cd=1..}] hg_ammo_cd 1
 scoreboard players remove @a[scores={medkit_cd=1..}] medkit_cd 1
 scoreboard players remove @a[scores={food_cd=1..}] food_cd 1
 scoreboard players remove @a[scores={plates_cd=1..}] plates_cd 1
-scoreboard players remove @a[scores={armor_cd=1..}] armor_cd 1
 scoreboard players remove @a[scores={blocks_cd=1..}] blocks_cd 1
 scoreboard players remove @a[scores={fuel_cd=1..}] fuel_cd 1
 

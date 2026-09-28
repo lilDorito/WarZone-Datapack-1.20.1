@@ -1,5 +1,4 @@
-# Objectives
-
+# Kit objs
 scoreboard objectives add rpg_cd dummy
 scoreboard objectives add rpg_cd_sec dummy
 scoreboard objectives add javelin_cd dummy
@@ -20,6 +19,16 @@ scoreboard objectives add grenade_cd dummy
 scoreboard objectives add grenade_cd_sec dummy
 scoreboard objectives add mlrs_cd dummy
 scoreboard objectives add mlrs_cd_sec dummy
+scoreboard objectives add radar_cd dummy
+scoreboard objectives add radar_cd_sec dummy
+scoreboard objectives add shahed_cd dummy
+scoreboard objectives add shahed_cd_sec dummy
+scoreboard objectives add orlan_cd dummy
+scoreboard objectives add orlan_cd_sec dummy
+scoreboard objectives add iskander_cd dummy
+scoreboard objectives add iskander_cd_sec dummy
+
+# Refill objs
 scoreboard objectives add ar_ammo_cd dummy
 scoreboard objectives add ar_ammo_cd_sec dummy
 scoreboard objectives add shotgun_ammo_cd dummy
@@ -38,10 +47,10 @@ scoreboard objectives add food_cd dummy
 scoreboard objectives add food_cd_sec dummy
 scoreboard objectives add plates_cd dummy
 scoreboard objectives add plates_cd_sec dummy
-scoreboard objectives add armor_cd dummy
-scoreboard objectives add armor_cd_sec dummy
 scoreboard objectives add blocks_cd dummy
 scoreboard objectives add blocks_cd_sec dummy
+
+# Weapon objs
 scoreboard objectives add ar_cd dummy
 scoreboard objectives add ar_cd_sec dummy
 scoreboard objectives add rifle_cd dummy
@@ -56,6 +65,8 @@ scoreboard objectives add smg_cd dummy
 scoreboard objectives add smg_cd_sec dummy
 scoreboard objectives add pistol_cd dummy
 scoreboard objectives add pistol_cd_sec dummy
+
+# Misc objs
 scoreboard objectives add temp_count dummy
 scoreboard objectives add spawn_immune dummy
 scoreboard objectives add respawn minecraft.custom:minecraft.deaths
@@ -68,6 +79,10 @@ scoreboard objectives add deaths minecraft.custom:minecraft.deaths
 scoreboard objectives add global dummy
 scoreboard objectives add const dummy
 scoreboard objectives add map dummy
+scoreboard objectives add wt_sum dummy
+scoreboard objectives add kills_old dummy
+
+# Transport objs
 scoreboard objectives add vehicle_cd dummy
 scoreboard objectives add vehicle_cd_sec dummy
 scoreboard objectives add heli_cd dummy
@@ -76,24 +91,29 @@ scoreboard objectives add aircraft_cd dummy
 scoreboard objectives add aircraft_cd_sec dummy
 scoreboard objectives add boat_cd dummy
 scoreboard objectives add boat_cd_sec dummy
+
+# Thermal vision objs
 scoreboard objectives add thermal_cd dummy
 scoreboard objectives add thermal_cd_sec dummy
 scoreboard objectives add thermal_active dummy
 scoreboard objectives add thermal_timer dummy
+
+# Armor objs
 scoreboard objectives add armor_type_cd dummy
 scoreboard objectives add armor_type_cd_sec dummy
-scoreboard objectives add wt_sum dummy
-scoreboard objectives add kills_old dummy
+
+# Gun Game objs
 scoreboard objectives add gg_cat dummy
 scoreboard objectives add gg_gun dummy
 scoreboard objectives add gg_remaining dummy
+
+# WarZone objs
 scoreboard objectives add wz_state dummy
 scoreboard objectives add wz_red_set dummy
 scoreboard objectives add wz_blue_set dummy
 scoreboard objectives add wz_winner dummy
 
 # Values
-
 scoreboard players set ticks_divisor const 20
 scoreboard players set #ab_timer global 0
 scoreboard players set #game match_mode 0

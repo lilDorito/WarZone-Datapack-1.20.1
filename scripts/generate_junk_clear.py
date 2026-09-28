@@ -115,6 +115,19 @@ ALLOWED_ITEMS = [
     "mcsp:opscore_helmet",
     "exoskeleton:exo_helmet",
     "thermal_imaging_goggles:thermal_imaging_goggles_helmet",
+
+    # AirTacticalArsenal
+    "ata:iskander",
+    "ata:launcher",
+    "ata:unified_terminal",
+    "ata:launch_interface_cable",
+    "ata:orlan_launcher",
+    "ata:orlan_tablet",
+    "ata:orlan",
+    "ata:shahed_launcher",
+    "ata:shahed",
+    "ata:control_tablet",
+    "ata:shahed_radar",
 ]
 
 MAIN_SLOTS = list(range(36))
