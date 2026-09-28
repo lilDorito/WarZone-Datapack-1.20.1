@@ -3,6 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Minecraft-1.20.1-3C8527?style=for-the-badge" alt="Minecraft 1.20.1" />
   <img src="https://img.shields.io/badge/Forge-47.4.10-F58220?style=for-the-badge" alt="Forge 47.4.10" />
+  <img src="https://img.shields.io/badge/VS%20Code-Spyglass-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code Spyglass" />
 </p>
 
 A Forge datapack powering a custom multiplayer combat project: Free-For-All, Team Deathmatch (2 and 4 teams), Gun Game, and a "Warzone" beacon-capture gamemode, on top of a full military loadout system (weapons, vehicles, aircraft, kits, and cosmetic skins).
