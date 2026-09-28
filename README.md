@@ -26,7 +26,7 @@ This repo is **not a standalone, drop-in datapack.** It's tightly coupled to a s
   - [SuperbWarfare (SBW)](https://www.curseforge.com/minecraft/mc-mods/superbwarfare) - weapons, ammo, armor, consumables
   - [MCSP](https://www.curseforge.com/minecraft/mc-mods/mcsp-military-vehicle) - additional vehicles/gear addon for SBW (`mcsp:` namespace)
   - [AshVehicles](https://www.curseforge.com/minecraft/mc-mods/ashvehicles) - additional aircraft/munitions addon for SBW (`ashvehicle:` namespace)
-  - [Air Tactical Arsenal - WarZone](https://www.curseforge.com/minecraft/mc-mods/air-tactical-arsenal-warzone) - Shahed/Orlan/Iskander + radar, custom fork of [Air Tactical Arsenal](https://modrinth.com/mod/air-tactical-arsenal-warzone) (`walkietalkie:` namespace)
+  - [Air Tactical Arsenal - WarZone](https://www.curseforge.com/minecraft/mc-mods/air-tactical-arsenal-warzone) - Shahed/Orlan/Iskander + radar, custom fork of [Air Tactical Arsenal](https://modrinth.com/mod/air-tactical-arsenal-warzone) (`ata:` namespace)
   - [Walkie-Talkie](https://www.curseforge.com/minecraft/mc-mods/walkie-talkie) - comms item (`walkietalkie:` namespace)
   - [Thermal Imaging Goggles](https://www.curseforge.com/minecraft/mc-mods/thermal-imaging-goggles) - thermal vision item (`thermal_imaging_goggles:` namespace)
   - [Exoskeleton Armor](https://www.curseforge.com/minecraft/mc-mods/exoskeleton-armor) - exoskeleton items (`exoskeleton:` namespace)
