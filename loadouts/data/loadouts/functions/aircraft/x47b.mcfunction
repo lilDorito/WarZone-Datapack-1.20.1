@@ -37,7 +37,7 @@ clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",En
 clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:yf-23",Count:1b}}
 clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:b-2",Count:1b}}
 clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:reaper",Count:1b}}
-clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:x_47b",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:x-47b",Count:1b}}
 clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:su-25",Count:1b}}
 clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:su-27",Count:1b}}
 clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:su-33",Count:1b}}
@@ -55,7 +55,7 @@ clear @s ashvehicle:gbu-57-item
 clear @s ashvehicle:jassm_item
 
 give @s superbwarfare:crowbar 1
-give @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:x_47b",Count:1b}} 1
+give @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:x-47b",Count:1b}} 1
 give @s superbwarfare:small_shell 256
 give @s superbwarfare:medium_aerial_bomb 4
 
