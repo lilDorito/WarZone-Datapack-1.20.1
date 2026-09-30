@@ -2,10 +2,6 @@ execute unless score #game match_mode matches 1..6 run tellraw @s {"text":"[×] 
 execute unless score #game match_mode matches 1..6 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
 execute unless score #game match_mode matches 1..6 run return 0
 
-execute if score #game match_mode matches 6 if score #game wz_state matches 0 run tellraw @s {"text":"[×] Loadout commands are disabled until both beacons are placed.","color":"red"}
-execute if score #game match_mode matches 6 if score #game wz_state matches 0 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
-execute if score #game match_mode matches 6 if score #game wz_state matches 0 run return 0
-
 execute if entity @s[tag=has_started] run tellraw @s {"text":"[×] You have already received your start kit!","color":"red"}
 execute if entity @s[tag=has_started] run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
 execute if entity @s[tag=has_started] run return 0
