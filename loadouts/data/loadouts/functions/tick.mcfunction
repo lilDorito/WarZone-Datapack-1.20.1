@@ -54,14 +54,14 @@ scoreboard players remove @a[scores={aircraft_cd=1..}] aircraft_cd 1
 execute as @a if score @s deaths > @s deaths_old run scoreboard players set @s spawn_immune 200
 execute as @a if score @s deaths > @s deaths_old run tellraw @s {"text":"Spawn protection (10s)","color":"green"}
 
-execute as @a[team=Red] if score #game match_mode matches 1 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_red_spawn
-execute as @a[team=Red] if score #game match_mode matches 3 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_red_spawn
-execute as @a[team=Blue] if score #game match_mode matches 1 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_blue_spawn
-execute as @a[team=Blue] if score #game match_mode matches 3 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_blue_spawn
-execute as @a[team=Green] if score #game match_mode matches 3 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_green_spawn
-execute as @a[team=Yellow] if score #game match_mode matches 3 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_yellow_spawn
-execute as @a[team=Red] if score #game match_mode matches 6 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_red_spawn
-execute as @a[team=Blue] if score #game match_mode matches 6 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_blue_spawn
+execute as @a[team=Red] at @s if score #game match_mode matches 1 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_red_spawn
+execute as @a[team=Red] at @s if score #game match_mode matches 3 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_red_spawn
+execute as @a[team=Blue] at @s if score #game match_mode matches 1 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_blue_spawn
+execute as @a[team=Blue] at @s if score #game match_mode matches 3 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_blue_spawn
+execute as @a[team=Green] at @s if score #game match_mode matches 3 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_green_spawn
+execute as @a[team=Yellow] at @s if score #game match_mode matches 3 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_yellow_spawn
+execute as @a[team=Red] at @s if score #game match_mode matches 6 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_red_spawn
+execute as @a[team=Blue] at @s if score #game match_mode matches 6 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_blue_spawn
 
 execute as @a run scoreboard players operation @s deaths_old = @s deaths
 
