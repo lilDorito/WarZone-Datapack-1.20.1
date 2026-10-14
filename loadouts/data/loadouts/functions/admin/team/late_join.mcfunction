@@ -13,6 +13,10 @@ execute if score #game match_mode matches 3 run function loadouts:admin/tdm/assi
 execute if score #game match_mode matches 2 run function loadouts:admin/team/assign_colors
 execute if score #game match_mode matches 4 run function loadouts:admin/team/assign_colors
 
+# Gun Game
+execute if score #game match_mode matches 5 run function loadouts:admin/team/assign_colors
+execute if score #game match_mode matches 5 as @a[tag=!has_started] run function loadouts:admin/gungame/late_join_player
+
 # WarZone
 execute if score #game match_mode matches 6 as @a[team=] run tag @s add unassigned
 execute if score #game match_mode matches 6 run function loadouts:admin/tdm/assign_tdm2

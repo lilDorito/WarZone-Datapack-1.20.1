@@ -39,12 +39,17 @@ execute as @s[scores={mine_cd=1..}] run tellraw @s ["",{"text":"[×] Mines kit o
 execute as @s[scores={mine_cd=1..}] at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
 execute if score @s mine_cd matches 1.. run return 0
 
+clear @s superbwarfare:ptkm_1r
 clear @s superbwarfare:tm_62
 clear @s superbwarfare:claymore_mine
 clear @s superbwarfare:blu_43_mine
+clear @s superbwarfare:tripwire_mine
+
+give @s superbwarfare:ptkm_1r 2
 give @s superbwarfare:tm_62 4
 give @s superbwarfare:claymore_mine 8
 give @s superbwarfare:blu_43_mine 8
+give @s superbwarfare:tripwire_mine 2
 
 tellraw @s {"text":"[✔] Mines kit received!","color":"green"}
 

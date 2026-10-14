@@ -39,9 +39,12 @@ execute if score @s mortar_cd matches 1.. run return 0
 clear @s superbwarfare:mortar_deployer
 clear @s superbwarfare:artillery_indicator
 clear @s superbwarfare:monitor
+
 give @s superbwarfare:mortar_deployer 2
 give @s superbwarfare:monitor 2
 give @s superbwarfare:artillery_indicator 1
+
+clear @s superbwarfare:mortar_shell
 give @s superbwarfare:mortar_shell 16
 
 tellraw @s {"text":"[✔] Mortar kit received!","color":"green"}

@@ -42,6 +42,7 @@ execute if score @s grenade_cd matches 1.. run return 0
 clear @s superbwarfare:rgo_grenade
 clear @s superbwarfare:hand_grenade
 clear @s superbwarfare:m18_smoke_grenade
+
 give @s superbwarfare:rgo_grenade 8
 give @s superbwarfare:hand_grenade 8
 give @s superbwarfare:m18_smoke_grenade 8

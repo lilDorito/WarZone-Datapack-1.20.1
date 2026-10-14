@@ -11,14 +11,16 @@ scoreboard objectives add mine_cd dummy
 scoreboard objectives add mine_cd_sec dummy
 scoreboard objectives add c4_cd dummy
 scoreboard objectives add c4_cd_sec dummy
+scoreboard objectives add grenade_cd dummy
+scoreboard objectives add grenade_cd_sec dummy
 scoreboard objectives add drone_cd dummy
 scoreboard objectives add drone_cd_sec dummy
 scoreboard objectives add mortar_cd dummy
 scoreboard objectives add mortar_cd_sec dummy
-scoreboard objectives add grenade_cd dummy
-scoreboard objectives add grenade_cd_sec dummy
 scoreboard objectives add mlrs_cd dummy
 scoreboard objectives add mlrs_cd_sec dummy
+scoreboard objectives add tow_cd dummy
+scoreboard objectives add tow_cd_sec dummy
 scoreboard objectives add radar_cd dummy
 scoreboard objectives add radar_cd_sec dummy
 scoreboard objectives add shahed_cd dummy
@@ -66,22 +68,6 @@ scoreboard objectives add smg_cd_sec dummy
 scoreboard objectives add pistol_cd dummy
 scoreboard objectives add pistol_cd_sec dummy
 
-# Misc objs
-scoreboard objectives add temp_count dummy
-scoreboard objectives add spawn_immune dummy
-scoreboard objectives add respawn minecraft.custom:minecraft.deaths
-scoreboard objectives add attack_time dummy
-scoreboard objectives add kills dummy
-scoreboard objectives add match_mode dummy
-scoreboard objectives add nextTeam dummy
-scoreboard objectives add deaths_old dummy
-scoreboard objectives add deaths minecraft.custom:minecraft.deaths
-scoreboard objectives add global dummy
-scoreboard objectives add const dummy
-scoreboard objectives add map dummy
-scoreboard objectives add wt_sum dummy
-scoreboard objectives add kills_old dummy
-
 # Transport objs
 scoreboard objectives add vehicle_cd dummy
 scoreboard objectives add vehicle_cd_sec dummy
@@ -112,6 +98,22 @@ scoreboard objectives add wz_state dummy
 scoreboard objectives add wz_red_set dummy
 scoreboard objectives add wz_blue_set dummy
 scoreboard objectives add wz_winner dummy
+
+# Misc objs
+scoreboard objectives add temp_count dummy
+scoreboard objectives add spawn_immune dummy
+scoreboard objectives add respawn minecraft.custom:minecraft.deaths
+scoreboard objectives add attack_time dummy
+scoreboard objectives add kills dummy
+scoreboard objectives add match_mode dummy
+scoreboard objectives add nextTeam dummy
+scoreboard objectives add deaths_old dummy
+scoreboard objectives add deaths minecraft.custom:minecraft.deaths
+scoreboard objectives add global dummy
+scoreboard objectives add const dummy
+scoreboard objectives add map dummy
+scoreboard objectives add wt_sum dummy
+scoreboard objectives add kills_old dummy
 
 # Values
 scoreboard players set ticks_divisor const 20

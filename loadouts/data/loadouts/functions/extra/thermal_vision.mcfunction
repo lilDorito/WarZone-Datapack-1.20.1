@@ -38,10 +38,9 @@ execute if entity @s[tag=thermal_on] run return 0
 
 tag @s add thermal_on
 
-clear @s superbwarfare:ru_helmet_6b47{display:{Name:'{"text":"Marsh Heavy Helmet"}'}}
-clear @s superbwarfare:us_helmet_pastg{display:{Name:'{"text":"Desert Heavy Helmet"}'}}
-clear @s mcsp:opscore_helmet{display:{Name:'{"text":"Light Tac Helmet"}'}}
-item replace entity @s armor.head with thermal_imaging_goggles:thermal_imaging_goggles_helmet
+curios clear @s head
+clear @s superbwarfare:thermal_imaging_goggles
+curios replace head 0 @s with superbwarfare:thermal_imaging_goggles
 
 scoreboard players set @s thermal_active 1
 scoreboard players set @s thermal_timer 600

@@ -15,6 +15,7 @@ clear @s minecraft:dirt
 clear @s minecraft:obsidian
 clear @s minecraft:netherite_pickaxe{Enchantments:[{id:"minecraft:unbreaking",lvl:3s},{id:"minecraft:efficiency",lvl:5s}]}
 clear @s superbwarfare:knife
+
 give @s minecraft:cooked_beef 16
 give @s superbwarfare:medical_kit 8
 give @s superbwarfare:armor_plate 32

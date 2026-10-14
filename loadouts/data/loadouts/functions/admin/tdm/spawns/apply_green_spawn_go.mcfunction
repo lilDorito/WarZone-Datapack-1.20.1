@@ -9,5 +9,3 @@ execute if score #spawnPick temp_count matches 2 unless data storage loadouts:sp
 execute if score #spawnPick temp_count matches 0 run wp tp minecraft:overworld Spawns "Green Spawn"
 execute if score #spawnPick temp_count matches 1 run wp tp minecraft:overworld Spawns "Green Spawn 2"
 execute if score #spawnPick temp_count matches 2 run wp tp minecraft:overworld Spawns "Green Spawn 3"
-
-spawnpoint @s ~ ~ ~

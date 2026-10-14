@@ -38,6 +38,7 @@ execute if score @s c4_cd matches 1.. run return 0
 clear @s superbwarfare:c4_bomb{Control:1b}
 clear @s superbwarfare:detonator
 clear @s superbwarfare:defuser
+
 give @s superbwarfare:c4_bomb{Control:1b} 8
 give @s superbwarfare:detonator 1
 give @s superbwarfare:defuser 1

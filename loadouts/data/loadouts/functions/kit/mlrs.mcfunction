@@ -33,15 +33,18 @@ execute if score @s mlrs_cd matches 1.. run return 0
 
 clear @s superbwarfare:crowbar
 clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"superbwarfare:type_63",Count:1b}}
+
+give @s superbwarfare:crowbar 1
+give @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"superbwarfare:type_63",Count:1b}} 1
+
 clear @s superbwarfare:medium_rocket_ap
 clear @s superbwarfare:medium_rocket_he
 clear @s superbwarfare:medium_rocket_cm
-give @s superbwarfare:crowbar 1
-give @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"superbwarfare:type_63",Count:1b}} 1
 give @s superbwarfare:medium_rocket_ap 8
 give @s superbwarfare:medium_rocket_he 8
 give @s superbwarfare:medium_rocket_cm 4
 
 tellraw @s {"text":"[✔] MLRS kit received!","color":"green"}
 
-scoreboard players set @s mlrs_cd 24000
+execute unless score #game match_mode matches 6 run scoreboard players set @s mlrs_cd 24000
+execute if score #game match_mode matches 6 run scoreboard players set @s mlrs_cd 12000

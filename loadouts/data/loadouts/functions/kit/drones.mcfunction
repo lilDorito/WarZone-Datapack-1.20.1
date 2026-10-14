@@ -37,9 +37,12 @@ execute if score @s drone_cd matches 1.. run return 0
 
 clear @s superbwarfare:drone
 clear @s superbwarfare:monitor
+
 give @s superbwarfare:drone 8
-give @s superbwarfare:mortar_shell 8
 give @s superbwarfare:monitor 2
+
+execute store result score @s temp_count run clear @s superbwarfare:mortar_shell 0
+execute if score @s temp_count matches ..8 run give @s superbwarfare:mortar_shell 8
 
 tellraw @s {"text":"[✔] Drones kit received!","color":"green"}
 

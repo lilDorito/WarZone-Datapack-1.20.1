@@ -28,11 +28,12 @@ execute as @s[scores={orlan_cd=1..}] at @s run playsound minecraft:block.note_bl
 execute if score @s orlan_cd matches 1.. run return 0
 
 clear @s ata:orlan
-clear @s ata:orlan_launcher
-clear @s ata:orlan_tablet
+clear @s ata:recon_uav_launcher
+clear @s ata:recon_uav_tablet
+
 give @s ata:orlan 1
-give @s ata:orlan_launcher 1
-give @s ata:orlan_tablet 1
+give @s ata:recon_uav_launcher 1
+give @s ata:recon_uav_tablet 1
 
 tellraw @s {"text":"[✔] Orlan kit received!","color":"green"}
 

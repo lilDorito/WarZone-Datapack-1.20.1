@@ -38,6 +38,7 @@ execute if score @s rpg_cd matches 1.. run return 0
 
 clear @s superbwarfare:rpg
 clear @s superbwarfare:rpg_rocket_tbg
+
 give @s superbwarfare:rpg 1
 give @s superbwarfare:rpg_rocket_tbg 8
 

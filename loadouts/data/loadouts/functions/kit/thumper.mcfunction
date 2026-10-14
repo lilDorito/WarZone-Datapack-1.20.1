@@ -41,6 +41,7 @@ execute if score @s thumper_cd matches 1.. run return 0
 
 clear @s superbwarfare:m_79
 clear @s superbwarfare:grenade_40mm
+
 give @s superbwarfare:m_79 1
 give @s superbwarfare:grenade_40mm 16
 

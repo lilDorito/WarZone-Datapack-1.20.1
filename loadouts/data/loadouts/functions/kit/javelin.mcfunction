@@ -32,6 +32,7 @@ execute if score @s javelin_cd matches 1.. run return 0
 
 clear @s superbwarfare:javelin
 clear @s superbwarfare:javelin_missile
+
 give @s superbwarfare:javelin 1
 give @s superbwarfare:javelin_missile 8
 

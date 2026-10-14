@@ -28,11 +28,12 @@ execute as @s[scores={shahed_cd=1..}] at @s run playsound minecraft:block.note_b
 execute if score @s shahed_cd matches 1.. run return 0
 
 clear @s ata:shahed
-clear @s ata:shahed_launcher
-clear @s ata:control_tablet
+clear @s ata:strike_uav_launcher
+clear @s ata:strike_uav_tablet
+
 give @s ata:shahed 1
-give @s ata:shahed_launcher 1
-give @s ata:control_tablet 1
+give @s ata:strike_uav_launcher 1
+give @s ata:strike_uav_tablet 1
 
 tellraw @s {"text":"[✔] Shahed kit received!","color":"green"}
 

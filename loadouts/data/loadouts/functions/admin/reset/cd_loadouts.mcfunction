@@ -7,6 +7,12 @@ scoreboard players reset @a c4_cd
 scoreboard players reset @a drone_cd
 scoreboard players reset @a mortar_cd
 scoreboard players reset @a grenade_cd
+scoreboard players reset @a mlrs_cd
+scoreboard players reset @a tow_cd
+scoreboard players reset @a shahed_cd
+scoreboard players reset @a orlan_cd
+scoreboard players reset @a iskander_cd
+scoreboard players reset @a radar_cd
 
 scoreboard players reset @a ar_ammo_cd
 scoreboard players reset @a shotgun_ammo_cd
@@ -16,8 +22,8 @@ scoreboard players reset @a hg_ammo_cd
 scoreboard players reset @a medkit_cd
 scoreboard players reset @a food_cd
 scoreboard players reset @a plates_cd
-scoreboard players reset @a armor_cd
 scoreboard players reset @a blocks_cd
+scoreboard players reset @a fuel_cd
 
 scoreboard players reset @a ar_cd
 scoreboard players reset @a rifle_cd

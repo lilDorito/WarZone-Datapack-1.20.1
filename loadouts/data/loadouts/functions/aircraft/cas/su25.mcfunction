@@ -1,0 +1,92 @@
+execute unless score #game match_mode matches 1..6 run tellraw @s {"text":"[×] Loadout commands are disabled until the match starts.","color":"red"}
+execute unless score #game match_mode matches 1..6 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute unless score #game match_mode matches 1..6 run return 0
+
+execute if score #game match_mode matches 6 if score #game wz_state matches 0 run tellraw @s {"text":"[×] Loadout commands are disabled until both beacons are placed.","color":"red"}
+execute if score #game match_mode matches 6 if score #game wz_state matches 0 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute if score #game match_mode matches 6 if score #game wz_state matches 0 run return 0
+
+execute if score #game match_mode matches 5 run tellraw @s {"text":"[×] Aircraft are disabled in Gun Game!","color":"red"}
+execute if score #game match_mode matches 5 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute if score #game match_mode matches 5 run return 0
+
+tag @s remove allowed
+execute if score #map map matches 0 run tag @s add allowed
+execute if score #map map matches 13 run tag @s add allowed
+execute unless entity @s[tag=allowed] run tellraw @s {"text":"[×] Aircraft loadouts are not allowed on this map!","color":"red"}
+execute unless entity @s[tag=allowed] run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute unless entity @s[tag=allowed] run return 0
+tag @s remove allowed
+
+execute as @s[scores={aircraft_cd=1..}] run scoreboard players operation @s aircraft_cd_sec = @s aircraft_cd
+execute as @s[scores={aircraft_cd=1..}] run scoreboard players operation @s aircraft_cd_sec /= ticks_divisor const
+execute as @s[scores={aircraft_cd=1..}] run tellraw @s ["",{"text":"[×] Aircraft loadout on cooldown! ","color":"red"},{"score":{"name":"@s","objective":"aircraft_cd_sec"}},{"text":"s"}]
+execute as @s[scores={aircraft_cd=1..}] at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute if score @s aircraft_cd matches 1.. run return 0
+
+clear @s superbwarfare:crowbar
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"superbwarfare:a_10a",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"superbwarfare:ju_87",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"superbwarfare:potuzhnolit",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:f-4",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:f_2",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:f14",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:f_15",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:f_16",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:f-18",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:f-22",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:f-35a",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:f-35b",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:f-117",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:yf-23",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:b-2",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:b52",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:ac130u",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:c130",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:reaper",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:x-47b",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:su-25",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:su-27",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:su-33",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:su-34",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:su-57",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:mig_15",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:mig_29",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:j-20",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:f-39e",Count:1b}}
+clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:eurofighter",Count:1b}}
+clear @s superbwarfare:medium_shell_ap
+clear @s superbwarfare:medium_shell_he
+clear @s superbwarfare:large_anti_ground_missile
+clear @s superbwarfare:small_aerial_bomb
+clear @s superbwarfare:medium_aerial_bomb
+clear @s superbwarfare:large_aerial_bomb
+clear @s ashvehicle:agm158item
+clear @s ashvehicle:aim120item
+clear @s ashvehicle:aim54item
+clear @s ashvehicle:aim9item
+clear @s ashvehicle:r60item
+clear @s ashvehicle:r77item
+clear @s ashvehicle:cbu87item
+clear @s ashvehicle:gbu57item
+
+give @s superbwarfare:crowbar 1
+give @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:su-25",Count:1b}} 1
+give @s superbwarfare:large_anti_ground_missile 4
+give @s superbwarfare:medium_aerial_bomb 6
+give @s superbwarfare:large_aerial_bomb 2
+
+clear @s superbwarfare:small_shell_ap
+clear @s superbwarfare:small_shell_he
+give @s superbwarfare:small_shell_ap 128
+give @s superbwarfare:small_shell_he 128
+
+clear @s superbwarfare:small_rocket
+give @s superbwarfare:small_rocket 32
+
+clear @s superbwarfare:flying_flare_ammo
+give @s superbwarfare:flying_flare_ammo 16
+
+tellraw @s {"text":"[✔] Su-25 Frogfoot loadout received!","color":"green"}
+
+execute unless score #game match_mode matches 4 run scoreboard players set @s aircraft_cd 12000

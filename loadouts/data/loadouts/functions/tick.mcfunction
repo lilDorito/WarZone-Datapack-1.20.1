@@ -49,25 +49,28 @@ scoreboard players remove @a[scores={boat_cd=1..}] boat_cd 1
 scoreboard players remove @a[scores={heli_cd=1..}] heli_cd 1
 scoreboard players remove @a[scores={aircraft_cd=1..}] aircraft_cd 1
 
-# Respawn immunity
+# Respawn + immunity
 
-execute as @a if score @s deaths > @s deaths_old run scoreboard players set @s spawn_immune 200
-execute as @a if score @s deaths > @s deaths_old run tellraw @s {"text":"Spawn protection (10s)","color":"green"}
+execute as @a if score #game match_mode matches 1..6 if score @s deaths > @s deaths_old run tag @s add pending_immune
 
-execute as @a[team=Red] at @s if score #game match_mode matches 1 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_red_spawn
-execute as @a[team=Red] at @s if score #game match_mode matches 3 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_red_spawn
-execute as @a[team=Blue] at @s if score #game match_mode matches 1 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_blue_spawn
-execute as @a[team=Blue] at @s if score #game match_mode matches 3 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_blue_spawn
-execute as @a[team=Green] at @s if score #game match_mode matches 3 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_green_spawn
-execute as @a[team=Yellow] at @s if score #game match_mode matches 3 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_yellow_spawn
-execute as @a[team=Red] at @s if score #game match_mode matches 6 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_red_spawn
-execute as @a[team=Blue] at @s if score #game match_mode matches 6 if score @s deaths > @s deaths_old run function loadouts:admin/tdm/spawns/apply_blue_spawn
+execute as @a if score #game match_mode matches 1 if score @s deaths > @s deaths_old run tag @s add pending_spawn
+execute as @a if score #game match_mode matches 3 if score @s deaths > @s deaths_old run tag @s add pending_spawn
+execute as @a if score #game match_mode matches 6 if score @s deaths > @s deaths_old run tag @s add pending_spawn
+
+execute as @e[type=player,tag=pending_spawn,team=Red] run function loadouts:admin/tdm/spawns/apply_red_spawn
+execute as @e[type=player,tag=pending_spawn,team=Blue] run function loadouts:admin/tdm/spawns/apply_blue_spawn
+execute as @e[type=player,tag=pending_spawn,team=Green] run function loadouts:admin/tdm/spawns/apply_green_spawn
+execute as @e[type=player,tag=pending_spawn,team=Yellow] run function loadouts:admin/tdm/spawns/apply_yellow_spawn
+tag @e[type=player,tag=pending_spawn] remove pending_spawn
+
+execute as @e[type=player,tag=pending_immune] run scoreboard players set @s spawn_immune 200
+execute as @e[type=player,tag=pending_immune] run tellraw @s {"text":"Spawn protection (10s)","color":"green"}
+tag @e[type=player,tag=pending_immune] remove pending_immune
 
 execute as @a run scoreboard players operation @s deaths_old = @s deaths
 
 scoreboard players remove @a[scores={spawn_immune=1..}] spawn_immune 1
-
-execute as @a[scores={spawn_immune=1..}] run effect give @s minecraft:resistance 1 4 true
+effect give @a[scores={spawn_immune=1..}] minecraft:resistance 1 4 true
 
 # Actionbar
 
@@ -81,17 +84,17 @@ execute if score #ab_timer global matches 20 run scoreboard players set #ab_time
 # Thermal vision
 
 execute as @a[scores={thermal_active=1}] at @s run scoreboard players remove @s thermal_timer 1
-execute as @a[scores={thermal_active=1, thermal_timer=0}] at @s run clear @s thermal_imaging_goggles:thermal_imaging_goggles_helmet
+execute as @a[scores={thermal_active=1, thermal_timer=0}] at @s run curios clear @s head
+execute as @a[scores={thermal_active=1, thermal_timer=0}] at @s run clear @s superbwarfare:thermal_imaging_goggles
 
-execute as @a[scores={thermal_active=1,thermal_timer=0},tag=armor_light] at @s run item replace entity @s armor.head with mcsp:opscore_helmet{display:{Name:'{"text":"Light Tac Helmet"}'}}
-execute as @a[scores={thermal_active=1, thermal_timer=0}] unless entity @s[tag=armor_light] if entity @s[tag=camo_2] at @s run item replace entity @s armor.head with superbwarfare:ru_helmet_6b47{display:{Name:'{"text":"Marsh Heavy Helmet"}'}}
-execute as @a[scores={thermal_active=1, thermal_timer=0}] unless entity @s[tag=armor_light] unless entity @s[tag=camo_2] at @s run item replace entity @s armor.head with superbwarfare:us_helmet_pastg{display:{Name:'{"text":"Desert Heavy Helmet"}'}}
-
-execute as @a[scores={thermal_active=1, thermal_timer=0}] at @s run playsound minecraft:block.beacon.deactivate master @a ~ ~ ~ 1 1
+execute as @a[scores={thermal_active=1, thermal_timer=0}] at @s run playsound minecraft:block.beacon.deactivate master @s ~ ~ ~ 1 1
 execute as @a[scores={thermal_active=1, thermal_timer=0}] at @s run tag @s remove thermal_on
 execute as @a[scores={thermal_active=1, thermal_timer=0}] at @s run scoreboard players set @s thermal_active 0
 
 scoreboard players remove @a[scores={thermal_cd=1..}] thermal_cd 1
+
+execute as @a[scores={thermal_timer=0}] at @s run curios clear @s head
+execute as @a[scores={thermal_timer=0}] at @s run clear @s superbwarfare:thermal_imaging_goggles
 
 # Walkie Talkies
 

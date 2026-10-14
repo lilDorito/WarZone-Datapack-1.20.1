@@ -31,9 +31,10 @@ execute as @s[scores={igla_cd=1..}] at @s run playsound minecraft:block.note_blo
 execute if score @s igla_cd matches 1.. run return 0
 
 clear @s superbwarfare:igla_9k38
-clear @s superbwarfare:igla_9k38_missile
 give @s superbwarfare:igla_9k38 1
-give @s superbwarfare:igla_9k38_missile 8
+
+execute store result score @s temp_count run clear @s superbwarfare:medium_anti_air_missile 0
+execute if score @s temp_count matches ..8 run give @s superbwarfare:medium_anti_air_missile 8
 
 tellraw @s {"text":"[✔] Igla kit received!","color":"green"}
 
