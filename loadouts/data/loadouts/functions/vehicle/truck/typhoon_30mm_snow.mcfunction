@@ -43,7 +43,7 @@ clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",En
 clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:m_777",Count:1b}}
 clear @s mcsp:typhoon_30_spawn_item
 clear @s mcsp:typhoon_tricolor_30_spawn_item
-clear @s mcsp:typhoon_snow_30_spawn_item
+clear @s mcsp:vdv_snow_30mm_spawn_item
 clear @s mcsp:vdv_standart_spawn_item
 clear @s mcsp:vdv_desert_spawn_item
 clear @s mcsp:vdv_snow_spawn_item
@@ -86,7 +86,7 @@ clear @s mcsp:mlrs_shells
 clear @s mcsp:40mm_explosive
 
 give @s superbwarfare:crowbar 1
-give @s mcsp:typhoon_snow_30_spawn_item 1
+give @s mcsp:vdv_snow_30mm_spawn_item 1
 
 execute store result score @s temp_count run clear @s superbwarfare:small_shell_aa 0
 execute if score @s temp_count matches ..128 run give @s superbwarfare:small_shell_aa 128

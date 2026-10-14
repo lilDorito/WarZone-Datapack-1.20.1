@@ -43,7 +43,7 @@ clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",En
 clear @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:m_777",Count:1b}}
 clear @s mcsp:typhoon_30_spawn_item
 clear @s mcsp:typhoon_tricolor_30_spawn_item
-clear @s mcsp:typhoon_snow_30_spawn_item
+clear @s mcsp:vdv_snow_30mm_spawn_item
 clear @s mcsp:vdv_standart_spawn_item
 clear @s mcsp:vdv_desert_spawn_item
 clear @s mcsp:vdv_snow_spawn_item

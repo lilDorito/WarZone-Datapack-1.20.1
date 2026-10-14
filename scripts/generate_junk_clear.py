@@ -16,7 +16,7 @@ ALLOWED_ITEMS = [
     # MCSP vehicles
     "mcsp:typhoon_tricolor_30_spawn_item",
     "mcsp:typhoon_30_spawn_item",
-    "mcsp:typhoon_snow_30_spawn_item",
+    "mcsp:vdv_snow_30mm_spawn_item",
     "mcsp:vdv_standart_spawn_item",
     "mcsp:vdv_desert_spawn_item",
     "mcsp:vdv_snow_spawn_item",
@@ -177,7 +177,7 @@ ALLOWED_ITEMS = [
     "superbwarfare:ru_chest_6b43",
     "superbwarfare:ru_helmet_6b47",
     "superbwarfare:us_chest_iotv",
-    "superbwarfare:us_helmet_pastg",
+    "superbwarfare:us_helmet_pasgt",
     "mcsp:vest_avs",
     "mcsp:opscore_helmet",
 

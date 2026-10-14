@@ -39,7 +39,7 @@ tag @s remove armor_light
 execute if entity @s[tag=camo_2] run item replace entity @s armor.chest with superbwarfare:ru_chest_6b43{display:{Name:'{"text":"Marsh Heavy Vest"}'}}
 execute if entity @s[tag=camo_2] run item replace entity @s armor.head with superbwarfare:ru_helmet_6b47{display:{Name:'{"text":"Marsh Heavy Helmet"}'}}
 execute unless entity @s[tag=camo_2] run item replace entity @s armor.chest with superbwarfare:us_chest_iotv{display:{Name:'{"text":"Desert Heavy Vest"}'}}
-execute unless entity @s[tag=camo_2] run item replace entity @s armor.head with superbwarfare:us_helmet_pastg{display:{Name:'{"text":"Desert Heavy Helmet"}'}}
+execute unless entity @s[tag=camo_2] run item replace entity @s armor.head with superbwarfare:us_helmet_pasgt{display:{Name:'{"text":"Desert Heavy Helmet"}'}}
 
 tag @s add has_started
 
