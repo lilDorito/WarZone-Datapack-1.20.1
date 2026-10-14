@@ -68,7 +68,7 @@ Weapons, armor, refills (except fuel), the **Grenades**, **Mines** and **Thumper
 | Javelin kit, Igla kit | · | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ |
 | Fuel refill | · | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ |
 | Ground vehicles | · | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ |
-| Assault / light attack helicopters | · | · | · | ✓ | · | · | ✓ | · | · | · | · | · | ✓ |
+| Assault / light attack helicopters | · | · | · | · | · | · | ✓ | · | ✓ | · | · | · | ✓ |
 | Heavy attack / cargo helicopters | · | · | · | · | · | · | · | · | · | · | · | · | ✓ |
 | Aircraft | · | · | · | · | · | · | · | · | · | · | · | · | ✓ |
 | Boats | · | · | · | · | · | · | · | · | · | · | · | · | ✓ |
