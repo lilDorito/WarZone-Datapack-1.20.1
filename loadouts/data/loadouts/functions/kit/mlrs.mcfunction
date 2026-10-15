@@ -44,6 +44,9 @@ give @s superbwarfare:medium_rocket_ap 8
 give @s superbwarfare:medium_rocket_he 8
 give @s superbwarfare:medium_rocket_cm 4
 
+clear @s superbwarfare:artillery_indicator
+give @s superbwarfare:artillery_indicator 1
+
 tellraw @s {"text":"[✔] MLRS kit received!","color":"green"}
 
 execute unless score #game match_mode matches 6 run scoreboard players set @s mlrs_cd 24000

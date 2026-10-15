@@ -37,11 +37,12 @@ execute as @s[scores={mortar_cd=1..}] at @s run playsound minecraft:block.note_b
 execute if score @s mortar_cd matches 1.. run return 0
 
 clear @s superbwarfare:mortar_deployer
-clear @s superbwarfare:artillery_indicator
 clear @s superbwarfare:monitor
 
 give @s superbwarfare:mortar_deployer 2
 give @s superbwarfare:monitor 2
+
+clear @s superbwarfare:artillery_indicator
 give @s superbwarfare:artillery_indicator 1
 
 clear @s superbwarfare:mortar_shell

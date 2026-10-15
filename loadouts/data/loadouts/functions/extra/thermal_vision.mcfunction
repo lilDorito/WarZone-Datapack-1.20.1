@@ -44,7 +44,7 @@ curios replace head 0 @s with superbwarfare:thermal_imaging_goggles
 
 scoreboard players set @s thermal_active 1
 scoreboard players set @s thermal_timer 600
-scoreboard players set @s thermal_cd 6600
+scoreboard players set @s thermal_cd 6000
 
 tellraw @a ["", {"selector": "@s", "color": "gold"}, {"text":" has activated thermal vision!","color":"gold"}]
 execute at @s run playsound minecraft:block.beacon.activate master @a ~ ~ ~ 1 1

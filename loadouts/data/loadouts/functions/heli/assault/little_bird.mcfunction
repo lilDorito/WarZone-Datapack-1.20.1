@@ -13,7 +13,7 @@ execute if score #game match_mode matches 5 run return 0
 tag @s remove allowed
 execute if score #map map matches 0 run tag @s add allowed
 execute if score #map map matches 7 run tag @s add allowed
-execute if score #map map matches 4 run tag @s add allowed
+execute if score #map map matches 9 run tag @s add allowed
 execute if score #map map matches 13 run tag @s add allowed
 execute unless entity @s[tag=allowed] run tellraw @s {"text":"[×] Helicopter loadouts are not allowed on this map!","color":"red"}
 execute unless entity @s[tag=allowed] run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1

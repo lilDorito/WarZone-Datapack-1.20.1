@@ -53,7 +53,7 @@ These mods provide nearly every weapon, vehicle and munition the pack hands out.
 
 | Mod | Required version | Fork | Namespace | Used for |
 |---|---|---|---|---|
-| SuperbWarfare (SBW) | `0.8.9.2-warzone-1.0.1` | 🔒 **Private fork** of [SuperbWarfare](https://www.curseforge.com/minecraft/mc-mods/superbwarfare) | `superbwarfare:` | Firearms, ammo, launchers, explosives, mines, drones, armor, plates, medkits, parachute, thermal goggles, base vehicles and aircraft, vehicle munitions |
+| SuperbWarfare (SBW) | `0.8.9.2-warzone-1.0.1` | 🔒 **Private fork** of [SuperbWarfare](https://www.curseforge.com/minecraft/mc-mods/superb-warfare) | `superbwarfare:` | Firearms, ammo, launchers, explosives, mines, drones, armor, plates, medkits, parachute, thermal goggles, base vehicles and aircraft, vehicle munitions |
 | MCSP | `1.0.10-warzone-1.0.1` | 🔒 **Private fork** of [MCSP](https://www.curseforge.com/minecraft/mc-mods/mcsp-military-vehicle) | `mcsp:` | Most ground vehicles (Abrams, Bradley, T-80/T-90, BMD-4, Sprut, Humvee, Typhoon, Ural, TOS-1A…), light armor, 40 mm HE grenades and thermobaric rocket shells |
 | AshVehicles | `4.6-warzone-1.0.1` | 🔒 **Private fork** of [AshVehicles](https://www.curseforge.com/minecraft/mc-mods/ashvehicles) | `ashvehicle:` | Most fixed-wing aircraft and helicopters, Gepard / Pantsir / M777, air-to-air and air-to-ground missiles, guided bombs |
 | Air Tactical Arsenal - WarZone | `1.3.0` | 🌐 **Public fork** of Air Tactical Arsenal: [CurseForge](https://www.curseforge.com/minecraft/mc-mods/air-tactical-arsenal-warzone) · [Modrinth](https://modrinth.com/mod/air-tactical-arsenal-warzone) | `ata:` | Shahed strike UAV, Orlan recon UAV, Iskander-M ballistic missile, Radar |
@@ -67,7 +67,7 @@ These mods provide nearly every weapon, vehicle and munition the pack hands out.
 |---|---|---|
 | [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios) | `curios` command | Back slot (parachute) and head slot (thermal goggles) |
 | [Walkie-Talkie](https://www.curseforge.com/minecraft/mc-mods/walkie-talkie) | `walkietalkie:` | Team radios, auto-locked to the team's channel in team modes |
-| [Server Waypoint](https://www.curseforge.com/minecraft/mc-mods/server-waypoint) | `wp` command | Storing and teleporting to team spawn points |
+| [Server Waypoint Reworked](https://www.curseforge.com/minecraft/mc-mods/server-waypoint-reworked) | `wp` command | Storing and teleporting to team spawn points |
 | [Skin Restorer](https://www.curseforge.com/minecraft/mc-mods/skinrestorer) | `skin` command | Cosmetic skin loadouts |
 | [Xaero's Map Server Utils](https://modrinth.com/datapack/xaeros-map-server-utils) | `xaero:` functions | Enforces Fair-Play mode for [Xaero's Minimap](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap) / [World Map](https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map) |
 

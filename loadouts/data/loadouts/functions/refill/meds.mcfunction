@@ -12,7 +12,7 @@ execute as @s[scores={medkit_cd=1..}] run tellraw @s ["",{"text":"[×] Medkits o
 execute as @s[scores={medkit_cd=1..}] at @s run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
 execute as @s[scores={medkit_cd=1..}] run return 0
 
-execute store result score @s temp_count run clear @s superbwarfare:sniper_ammo 0
+execute store result score @s temp_count run clear @s superbwarfare:medical_kit 0
 
 execute as @s[scores={temp_count=8..}] run tellraw @s {"text":"[!] Medkits already full (8)","color":"gray"}
 execute as @s[scores={temp_count=8..}] run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1

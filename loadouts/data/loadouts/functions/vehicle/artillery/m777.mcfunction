@@ -100,6 +100,9 @@ execute if score @s temp_count matches ..4 run give @s superbwarfare:large_shell
 clear @s superbwarfare:large_shell_cm
 give @s superbwarfare:large_shell_cm 8
 
+clear @s superbwarfare:artillery_indicator
+give @s superbwarfare:artillery_indicator 1
+
 tellraw @s {"text":"[✔] M-777 Howitzer loadout received!","color":"green"}
 
 execute unless score #game match_mode matches 4 run scoreboard players set @s vehicle_cd 9600

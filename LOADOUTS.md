@@ -139,7 +139,7 @@ Each kit has its own cooldown. Kits are disabled in Vehicle Mode and Gun Game. S
 | **C4** | 8 remote C4 charges, detonator, defuser | 10 min |
 | **Mortar** | 2 mortars, 2 monitors, artillery indicator, 16 mortar shells | 10 min |
 | **TOW** | Deployable TOW launcher + 8 anti-tank missiles | 10 min |
-| **Drones** | 8 drones, 2 monitors, 8 mortar shells to drop | 10 min |
+| **Drones** | 8 drones, 2 monitors, 8 mortar shells to attach | 10 min |
 | **Javelin** | Javelin + 8 missiles | 10 min |
 | **Igla** | Igla 9K38 MANPADS + 8 anti-air missiles | 10 min |
 | **MLRS** | Deployable Type 63 MLRS + 8 AP, 8 HE, 4 cluster rockets, artillery indicator | 20 min (**10 min in WarZone**) |
@@ -186,7 +186,7 @@ Refills top you up to a fixed amount and do nothing if you're already full.
 
 ### Main battle tanks
 
-AP, HE and canister shells, coaxial MG ammo. The Russian tanks also carry gun-launched ATGMs.
+AP, HE and canister shells, coaxial MG ammo. The russian tanks also carry gun-launched ATGMs.
 
 | Vehicle | Variants | Cooldown |
 |---|---|---|

@@ -86,7 +86,7 @@ clear @s mcsp:mlrs_shells
 clear @s mcsp:40mm_explosive
 
 give @s superbwarfare:crowbar 1
-give @s mcsp:t80bv_green_spawn_item 1
+give @s mcsp:t80u_green_spawn_item 1
 
 clear @s superbwarfare:medium_anti_ground_missile
 give @s superbwarfare:medium_anti_ground_missile 16

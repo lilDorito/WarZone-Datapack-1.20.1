@@ -90,6 +90,9 @@ give @s mcsp:tos_1a_tricolor_spawn_item 1
 
 give @s mcsp:mlrs_shells 42
 
+clear @s superbwarfare:artillery_indicator
+give @s superbwarfare:artillery_indicator 1
+
 clear @s superbwarfare:vehicle_smoke_ammo
 give @s superbwarfare:vehicle_smoke_ammo 8 
 

@@ -99,6 +99,9 @@ give @s superbwarfare:large_shell_wp 8
 clear @s superbwarfare:large_shell_cm
 give @s superbwarfare:large_shell_cm 8
 
+clear @s superbwarfare:artillery_indicator
+give @s superbwarfare:artillery_indicator 1
+
 clear @s superbwarfare:vehicle_smoke_ammo
 give @s superbwarfare:vehicle_smoke_ammo 8 
 

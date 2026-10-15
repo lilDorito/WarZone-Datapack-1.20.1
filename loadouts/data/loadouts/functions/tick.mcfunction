@@ -6,9 +6,10 @@ scoreboard players remove @a[scores={igla_cd=1..}] igla_cd 1
 scoreboard players remove @a[scores={thumper_cd=1..}] thumper_cd 1
 scoreboard players remove @a[scores={mine_cd=1..}] mine_cd 1
 scoreboard players remove @a[scores={c4_cd=1..}] c4_cd 1
+scoreboard players remove @a[scores={grenade_cd=1..}] grenade_cd 1
 scoreboard players remove @a[scores={drone_cd=1..}] drone_cd 1
 scoreboard players remove @a[scores={mortar_cd=1..}] mortar_cd 1
-scoreboard players remove @a[scores={grenade_cd=1..}] grenade_cd 1
+scoreboard players remove @a[scores={tow_cd=1..}] tow_cd 1
 scoreboard players remove @a[scores={mlrs_cd=1..}] mlrs_cd 1
 scoreboard players remove @a[scores={radar_cd=1..}] radar_cd 1
 scoreboard players remove @a[scores={shahed_cd=1..}] shahed_cd 1

@@ -88,15 +88,15 @@ clear @s mcsp:40mm_explosive
 give @s superbwarfare:crowbar 1
 give @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"superbwarfare:sodayo_pick_up_rocket",Count:1b}} 1
 
-execute store result score @s temp_count run clear @s superbwarfare:medium_anti_ground_missile 0
-execute if score @s temp_count matches ..8 run give @s superbwarfare:medium_anti_ground_missile 8
-
 clear @s superbwarfare:medium_rocket_ap
 clear @s superbwarfare:medium_rocket_he
 clear @s superbwarfare:medium_rocket_cm
 give @s superbwarfare:medium_rocket_ap 8
 give @s superbwarfare:medium_rocket_he 8
 give @s superbwarfare:medium_rocket_cm 4
+
+clear @s superbwarfare:artillery_indicator
+give @s superbwarfare:artillery_indicator 1
 
 tellraw @s {"text":"[✔] MLRS Pickup loadout received!","color":"green"}
 
