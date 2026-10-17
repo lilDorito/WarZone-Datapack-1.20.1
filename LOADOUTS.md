@@ -306,7 +306,7 @@ Autocannon shells, coaxial MG ammo and 16 ATGMs (LAV-150: autocannon only). Spru
 | | F-35A Lightning II | 2 large bombs, 4 AGM-158, 4 AIM-120 | 14.5 min |
 | | F-35B Lightning II | 2 medium bombs, 4 AGM-158, 4 AIM-120 | 14.5 min |
 | **Strike** | F-4 Phantom II | 6 medium bombs, 4 AIM-9 | 8 min |
-| | Su-34 Fullback | 2 AGMs, 4 large bombs, 2 R-60, 2 R-77 | 10 min |
+| | Su-34 Fullback | 2 AGMs, 4 large bombs, 2 R-60, 2 R-77 | 12 min |
 | **Close air support** | A-10 Thunderbolt II | 4 AGMs, 6 medium + 2 large bombs, 32 rockets | 10 min |
 | | Su-25 Frogfoot | 4 AGMs, 6 medium + 2 large bombs, 32 rockets | 10 min |
 | **Bombers** | F-117 Nighthawk | 8 large bombs (no cannon) | 11.5 min |
