@@ -108,7 +108,7 @@ You can't re-equip the armor type you're already wearing. Camos apply to heavy a
 
 ## Weapons
 
-Every weapon class has its own **10 min** cooldown. Weapons are disabled in Vehicle Mode and Gun Game.
+Weapons are disabled in Vehicle Mode and Gun Game.
 
 | Class | Weapons | Ammo topped up to |
 |---|---|---|
@@ -123,6 +123,25 @@ Every weapon class has its own **10 min** cooldown. Weapons are disabled in Vehi
 | **SMGs** (`smg/`) | MP5, Vector | 192 handgun |
 | **Snipers** (`sniper/`) | AWM, Barrett M98B, Sentinel, SVD | 32 sniper |
 | | NTW-20 | 32 heavy |
+
+| Weapons | Cooldown |
+|---|---|
+| AK-47, M4 | 8 min |
+| AK-12, Insidious, QBZ-95 | 10 min |
+| HK-416, MK-14, QBZ-191 | 12 min |
+| Devotion, M-60, RPK | 10 min |
+| M-134 Minigun | 12 min |
+| Browning M2HB | 14 min |
+| MP-443 | 6 min |
+| M-1911A1 | 8 min |
+| Glock-18, Trachelium revolver | 10 MIN |
+| Marlin, SKS | 8 min |
+| Kar-98k, Mosin | 10 min |
+| AA-12, M-870 MCS | 10 min |
+| MP5, Vector | 10 min |
+| Sentinel, SVD | 10 min |
+| AWM, Barrett M98B | 12 min |
+| NTW-20 | 14 min |
 
 ---
 
@@ -251,7 +270,7 @@ Autocannon shells, coaxial MG ammo and 16 ATGMs (LAV-150: autocannon only). Spru
 
 | Helicopter | You get | Maps | Cooldown |
 |---|---|---|---|
-| **AH-6 Little Bird** | Cannon shells, 16 rockets | Army Base, Trenches, WarZone | 20 min (**10 in WarZone**) |
+| **AH-6 Little Bird** | Cannon shells, 16 rockets | Army Base, Trenches, WarZone | 10 min (**5 in WarZone**) |
 | **MH-60M Black Hawk** | Cannon shells, 32 rockets | Army Base, Trenches, WarZone | 20 min (**10 in WarZone**) |
 | **RAH-66 Comanche** | Cannon shells, 32 rockets, 4 AA missiles, 4 Hellfires | Army Base, Trenches, WarZone | 20 min (**10 in WarZone**) |
 | **Ka-52 Alligator** | Cannon shells, 32 rockets, 4 AA missiles, 4 ATGMs | Army Base, Trenches, WarZone | 20 min (**10 in WarZone**) |
@@ -270,13 +289,13 @@ Autocannon shells, coaxial MG ammo and 16 ATGMs (LAV-150: autocannon only). Spru
 | **Light / vintage** | Potuzhnolit | Heavy MG ammo, 16 mortar shells to drop (no flares) | 5 min |
 | | Ju-87 Stuka | 4 small + 2 medium bombs, MG ammo, 8 flares | 7 min |
 | | MiG-15 Fagot | 4 small bombs, reduced cannon ammo, 8 flares | 7 min |
-| **Fighters** | F-15 Eagle | 4 AIM-9, 4 AIM-120 | 10 min |
-| | Su-27 Flanker | 4 R-60, 4 R-77 | 10 min |
-| | YF-23 Black Widow II | 2 AIM-9, 6 AIM-120 | 11.5 min |
+| **Fighters** | | Su-27 Flanker | 4 R-60, 4 R-77 | 10 min |
+| | F-15 Eagle | 4 AIM-9, 4 AIM-120 | 10 min |
 | | Su-33 Flanker-D | 3 R-60, 5 R-77 | 11.5 min |
-| | J-20 Mighty Dragon | 2 R-60, 6 R-77 | 11.5 min |
-| | F-22 Raptor | 4 AIM-9, 6 AIM-120 | 13.5 min |
-| | Su-57 Felon | 4 R-60, 6 R-77 | 13.5 min |
+| | J-20 Mighty Dragon | 2 R-60, 6 R-77 | 13 min |
+| | YF-23 Black Widow II | 2 AIM-9, 6 AIM-120 | 13.5 min |
+| | Su-57 Felon | 4 R-60, 6 R-77 | 14 min |
+| | F-22 Raptor | 4 AIM-9, 6 AIM-120 | 14.5 min |
 | **Interceptor** | F-14 Tomcat | 4 AIM-9, 4 AIM-54 Phoenix | 11.5 min |
 | **Multirole** | F/A-18 Hornet | 4 medium bombs, 2 AIM-9, 2 AIM-120 | 10 min |
 | | F-16 Fighting Falcon | 2 AGMs, 2 medium bombs, 2 AIM-9, 2 AIM-120 | 10 min |
@@ -284,8 +303,8 @@ Autocannon shells, coaxial MG ammo and 16 ATGMs (LAV-150: autocannon only). Spru
 | | MiG-29 Fulcrum | 2 AGMs, 2 medium bombs, 2 R-60, 2 R-77 | 10 min |
 | | Eurofighter Typhoon | 2 medium bombs, 6 AIM-9, 2 AIM-120 | 13.5 min |
 | | JAS 39E Gripen | 2 AGMs, 2 medium bombs, 2 AIM-9, 4 AIM-120 | 13.5 min |
-| | F-35A Lightning II | 2 large bombs, 4 AGM-158, 4 AIM-120 | 13.5 min |
-| | F-35B Lightning II | 2 medium bombs, 4 AGM-158, 4 AIM-120 | 13.5 min |
+| | F-35A Lightning II | 2 large bombs, 4 AGM-158, 4 AIM-120 | 14.5 min |
+| | F-35B Lightning II | 2 medium bombs, 4 AGM-158, 4 AIM-120 | 14.5 min |
 | **Strike** | F-4 Phantom II | 6 medium bombs, 4 AIM-9 | 8 min |
 | | Su-34 Fullback | 2 AGMs, 4 large bombs, 2 R-60, 2 R-77 | 10 min |
 | **Close air support** | A-10 Thunderbolt II | 4 AGMs, 6 medium + 2 large bombs, 32 rockets | 10 min |
@@ -296,7 +315,7 @@ Autocannon shells, coaxial MG ammo and 16 ATGMs (LAV-150: autocannon only). Spru
 | **Gunship** | AC-130U Spooky II | Small, medium and large cannon shells, 32 flares | 15 min |
 | **Cargo** | C-130 Hercules | 32 flares (unarmed) | 10 min |
 | **UAVs** | MQ-9 Reaper | 2 medium bombs, 8 Hellfires (no cannon) | 10 min |
-| | X-47B UCAV | 4 medium bombs, 6 AGMs (no cannon) | 10 min |
+| | X-47B UCAV | 4 medium bombs, 8 AGMs (no cannon) | 12 min |
 
 ---
 

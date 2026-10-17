@@ -37,4 +37,4 @@ execute as @s[scores={temp_count=..191}] run tellraw @s {"text":"[✔] MK-14 + a
 
 execute as @s[scores={temp_count=192..}] run tellraw @s {"text":"[✔] MK-14 equipped (ammo already full)","color":"yellow"}
 
-scoreboard players set @s ar_cd 12000
+scoreboard players set @s ar_cd 14400

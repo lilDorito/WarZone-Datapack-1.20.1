@@ -86,4 +86,4 @@ give @s superbwarfare:flying_flare_ammo 16
 
 tellraw @s {"text":"[✔] F-35A Lightning II loadout received!","color":"green"}
 
-execute unless score #game match_mode matches 4 run scoreboard players set @s aircraft_cd 16200
+execute unless score #game match_mode matches 4 run scoreboard players set @s aircraft_cd 17400

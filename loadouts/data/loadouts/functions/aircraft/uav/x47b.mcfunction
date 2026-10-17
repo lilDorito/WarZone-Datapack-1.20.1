@@ -73,11 +73,11 @@ clear @s ashvehicle:gbu57item
 give @s superbwarfare:crowbar 1
 give @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:x-47b",Count:1b}} 1
 give @s superbwarfare:medium_aerial_bomb 4
-give @s superbwarfare:large_anti_ground_missile 6
+give @s superbwarfare:large_anti_ground_missile 8
 
 clear @s superbwarfare:flying_flare_ammo
 give @s superbwarfare:flying_flare_ammo 16
 
 tellraw @s {"text":"[✔] X-47B UCAV loadout received!","color":"green"}
 
-execute unless score #game match_mode matches 4 run scoreboard players set @s aircraft_cd 12000
+execute unless score #game match_mode matches 4 run scoreboard players set @s aircraft_cd 14400

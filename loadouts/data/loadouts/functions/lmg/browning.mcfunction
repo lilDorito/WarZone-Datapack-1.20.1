@@ -34,4 +34,4 @@ execute as @s[scores={temp_count=..63}] run tellraw @s {"text":"[✔] Browning M
 
 execute as @s[scores={temp_count=64..}] run tellraw @s {"text":"[✔] Browning M2HB equipped (ammo already full)","color":"yellow"}
 
-scoreboard players set @s lmg_cd 12000
+scoreboard players set @s lmg_cd 16800

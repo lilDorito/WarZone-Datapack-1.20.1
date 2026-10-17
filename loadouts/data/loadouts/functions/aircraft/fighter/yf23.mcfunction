@@ -85,4 +85,4 @@ give @s superbwarfare:flying_flare_ammo 16
 
 tellraw @s {"text":"[✔] YF-23 Black Widow II loadout received!","color":"green"}
 
-execute unless score #game match_mode matches 4 run scoreboard players set @s aircraft_cd 13800
+execute unless score #game match_mode matches 4 run scoreboard players set @s aircraft_cd 16200
