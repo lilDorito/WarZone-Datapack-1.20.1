@@ -289,7 +289,7 @@ Autocannon shells, coaxial MG ammo and 16 ATGMs (LAV-150: autocannon only). Spru
 | **Light / vintage** | Potuzhnolit | Heavy MG ammo, 16 mortar shells to drop (no flares) | 5 min |
 | | Ju-87 Stuka | 4 small + 2 medium bombs, MG ammo, 8 flares | 7 min |
 | | MiG-15 Fagot | 4 small bombs, reduced cannon ammo, 8 flares | 7 min |
-| **Fighters** | | Su-27 Flanker | 4 R-60, 4 R-77 | 10 min |
+| **Fighters** | Su-27 Flanker | 4 R-60, 4 R-77 | 10 min |
 | | F-15 Eagle | 4 AIM-9, 4 AIM-120 | 10 min |
 | | Su-33 Flanker-D | 3 R-60, 5 R-77 | 11.5 min |
 | | J-20 Mighty Dragon | 2 R-60, 6 R-77 | 13 min |
