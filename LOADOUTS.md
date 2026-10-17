@@ -296,7 +296,7 @@ Autocannon shells, coaxial MG ammo and 16 ATGMs (LAV-150: autocannon only). Spru
 | | YF-23 Black Widow II | 2 AIM-9, 6 AIM-120 | 13.5 min |
 | | Su-57 Felon | 4 R-60, 6 R-77 | 14 min |
 | | F-22 Raptor | 4 AIM-9, 6 AIM-120 | 14.5 min |
-| **Interceptor** | F-14 Tomcat | 4 AIM-9, 4 AIM-54 Phoenix | 11.5 min |
+| **Interceptor** | F-14 Tomcat | 4 AIM-9, 4 AIM-54 Phoenix | 12 min |
 | **Multirole** | F/A-18 Hornet | 4 medium bombs, 2 AIM-9, 2 AIM-120 | 10 min |
 | | F-16 Fighting Falcon | 2 AGMs, 2 medium bombs, 2 AIM-9, 2 AIM-120 | 10 min |
 | | F-2 Viper Zero | 4 AGMs, 2 AIM-9, 2 AIM-120 | 10 min |
