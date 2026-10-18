@@ -88,9 +88,12 @@ clear @s mcsp:40mm_explosive
 give @s superbwarfare:crowbar 1
 give @s mcsp:humvee_sand_spawn_item 1
 
+clear @s superbwarfare:heavy_ammo
+give @s superbwarfare:heavy_ammo 192
+
 clear @s superbwarfare:vehicle_smoke_ammo
 give @s superbwarfare:vehicle_smoke_ammo 8
 
-tellraw @s {"text":"[✔] Humvee (sand) loadout received!","color":"green"}
+tellraw @s {"text":"[✔] Humvee RWS (sand) loadout received!","color":"green"}
 
-execute unless score #game match_mode matches 4 run scoreboard players set @s vehicle_cd 6000
+execute unless score #game match_mode matches 4 run scoreboard players set @s vehicle_cd 7200

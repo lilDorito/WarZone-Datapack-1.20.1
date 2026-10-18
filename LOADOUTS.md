@@ -253,7 +253,7 @@ Autocannon shells, coaxial MG ammo and 16 ATGMs (LAV-150: autocannon only). Spru
 
 | Vehicle | Variants | You get | Cooldown |
 |---|---|---|---|
-| Humvee | basic, camo, sand | — | 5 min |
+| Humvee | basic, camo, sand | 192 heavy ammo | 6 min |
 | Humvee Mk 19 | basic | 64 × 40 mm grenades, 4 ATGMs | 8 min |
 | Ural-4320 | basic, camo | — | 5 min |
 | Ural Typhoon MRAP | basic, camo, snow | — | 5 min |
