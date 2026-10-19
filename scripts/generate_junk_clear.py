@@ -56,9 +56,6 @@ ALLOWED_ITEMS = [
     "mcsp:zbd04a_green_spawn_item",
     "mcsp:zbd04a_sand_spawn_item",
 
-    # Walkie talkie
-    "walkietalkie:netherite_walkietalkie",
-
     # SuperbWarfare weapons
     "superbwarfare:aa_12",
     "superbwarfare:ak_12",
@@ -100,6 +97,7 @@ ALLOWED_ITEMS = [
     "superbwarfare:medical_kit",
     "superbwarfare:armor_plate",
     "superbwarfare:large_battery_pack",
+    "superbwarfare:battery",
     "superbwarfare:vehicle_smoke_ammo",
     "superbwarfare:flying_flare_ammo",
 
@@ -193,6 +191,23 @@ ALLOWED_ITEMS = [
     "ata:strike_uav_tablet",
     "ata:shahed",
     "ata:shahed_radar",
+
+    # SBW EW
+    "sbw_ew_addon:radio",
+    "sbw_ew_addon:jammer",
+    "sbw_ew_addon:portable_jammer",
+    "sbw_ew_addon:phased_array_module",
+    "sbw_ew_addon:recon_drone",
+    "sbw_ew_addon:heavy_bomber_drone",
+    "sbw_ew_addon:delivery_drone",
+    "sbw_ew_addon:kub_bla",
+    "sbw_ew_addon:bayraktar_tb2",
+    "sbw_ew_addon:extraction_crate",
+    "sbw_ew_addon:fiber_optic_cable",
+    "sbw_ew_addon:drone_net",
+    "sbw_ew_addon:electromagnetic_gun",
+    "sbw_ew_addon:drone_interceptor",
+    "sbw_ew_addon:direction_finder",
 ]
 
 MAIN_SLOTS = list(range(36))

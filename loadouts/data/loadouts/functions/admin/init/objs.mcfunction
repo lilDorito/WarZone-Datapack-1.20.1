@@ -13,8 +13,6 @@ scoreboard objectives add c4_cd dummy
 scoreboard objectives add c4_cd_sec dummy
 scoreboard objectives add grenade_cd dummy
 scoreboard objectives add grenade_cd_sec dummy
-scoreboard objectives add drone_cd dummy
-scoreboard objectives add drone_cd_sec dummy
 scoreboard objectives add mortar_cd dummy
 scoreboard objectives add mortar_cd_sec dummy
 scoreboard objectives add mlrs_cd dummy
@@ -23,10 +21,6 @@ scoreboard objectives add tow_cd dummy
 scoreboard objectives add tow_cd_sec dummy
 scoreboard objectives add radar_cd dummy
 scoreboard objectives add radar_cd_sec dummy
-scoreboard objectives add shahed_cd dummy
-scoreboard objectives add shahed_cd_sec dummy
-scoreboard objectives add orlan_cd dummy
-scoreboard objectives add orlan_cd_sec dummy
 scoreboard objectives add iskander_cd dummy
 scoreboard objectives add iskander_cd_sec dummy
 
@@ -78,6 +72,14 @@ scoreboard objectives add aircraft_cd_sec dummy
 scoreboard objectives add boat_cd dummy
 scoreboard objectives add boat_cd_sec dummy
 
+# Drones & EW objs
+scoreboard objectives add drone_strategic_cd dummy
+scoreboard objectives add drone_strategic_cd_sec dummy
+scoreboard objectives add drone_tactical_cd dummy
+scoreboard objectives add drone_tactical_cd_sec dummy
+scoreboard objectives add ew_cd dummy
+scoreboard objectives add ew_cd_sec dummy
+
 # Thermal vision objs
 scoreboard objectives add thermal_cd dummy
 scoreboard objectives add thermal_cd_sec dummy
@@ -114,6 +116,7 @@ scoreboard objectives add const dummy
 scoreboard objectives add map dummy
 scoreboard objectives add wt_sum dummy
 scoreboard objectives add kills_old dummy
+scoreboard objectives add realistic dummy
 
 # Values
 scoreboard players set ticks_divisor const 20
@@ -124,6 +127,7 @@ scoreboard players set #game wz_state 0
 scoreboard players set #game wz_red_set 0
 scoreboard players set #game wz_blue_set 0
 scoreboard players set #game wz_winner 0
+scoreboard players set #game realistic 0
 
 tellraw @a {"text":"[>] Objectives successfully initialized","color":"gold","bold":true}
 playsound entity.experience_orb.pickup master @a ~ ~ ~ 1 1

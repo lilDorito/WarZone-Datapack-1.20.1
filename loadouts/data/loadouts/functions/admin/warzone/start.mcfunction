@@ -25,8 +25,8 @@ clear @a minecraft:beacon
 execute as @a[team=Red,sort=random,limit=1] run give @s minecraft:beacon 1
 execute as @a[team=Blue,sort=random,limit=1] run give @s minecraft:beacon 1
 
-clear @a walkietalkie:netherite_walkietalkie
-give @a walkietalkie:netherite_walkietalkie 1
+clear @a sbw_ew_addon:radio
+give @a sbw_ew_addon:radio 1
 
 tellraw @a {"text":"[>] WarZone Started! Each team has one beacon - place it in your zone to begin.","color":"gold","bold":true}
 playsound entity.experience_orb.pickup master @a ~ ~ ~ 1 1

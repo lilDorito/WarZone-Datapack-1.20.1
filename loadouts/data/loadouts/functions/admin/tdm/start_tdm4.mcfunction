@@ -7,11 +7,14 @@ team leave @a
 tag @a add unassigned
 function loadouts:admin/tdm/assign_tdm4
 
-clear @a walkietalkie:netherite_walkietalkie
-give @a walkietalkie:netherite_walkietalkie 1
+clear @a sbw_ew_addon:radio
+give @a sbw_ew_addon:radio 1
 
-title @a title {"text":"TEAM DEATHMATCH","color":"gold","bold":true}
-title @a subtitle {"text":"Score as many kills as you can!","color":"gray"}
-tellraw @a {"text":"[>] TDM-4 Started!","color":"gold","bold":true}
+execute if score #game realistic matches 0 run title @a title {"text":"ARCADE TDM-4","color":"gold","bold":true}
+execute if score #game realistic matches 1 run title @a title {"text":"REALISTIC TDM-4","color":"red","bold":true}
+execute if score #game realistic matches 0 run title @a subtitle {"text":"Each kill scores a point!","color":"gray"}
+execute if score #game realistic matches 1 run title @a subtitle {"text":"Kills score, deaths cost a point!","color":"gray"}
+execute if score #game realistic matches 0 run tellraw @a {"text":"[>] Arcade TDM-4 Started!","color":"gold","bold":true}
+execute if score #game realistic matches 1 run tellraw @a {"text":"[>] Realistic TDM-4 Started!","color":"gold","bold":true}
 playsound entity.experience_orb.pickup master @a ~ ~ ~ 1 1
 

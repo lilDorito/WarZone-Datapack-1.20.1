@@ -54,4 +54,4 @@ tellraw @s {"text":"[✔] MH-60M Black Hawk loadout received!","color":"green"}
 
 execute if score #game match_mode matches 6 run scoreboard players set @s heli_cd 12000
 execute if score #game match_mode matches 4 run scoreboard players set @s heli_cd 0
-execute unless score #game match_mode matches 4 unless score #game match_mode matches 6 run scoreboard players set @s heli_cd 24000
+execute unless score #game match_mode matches 4 unless score #game match_mode matches 6 run scoreboard players set @s heli_cd 18000

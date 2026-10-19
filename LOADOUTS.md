@@ -15,6 +15,8 @@ Back to the [README](README.md).
 - [Armor and camo](#armor-and-camo)
 - [Weapons](#weapons)
 - [Kits](#kits)
+- [Drones](#drones)
+- [Electronic warfare](#electronic-warfare)
 - [Refills](#refills)
 - [Extras](#extras)
 - [Ground vehicles](#ground-vehicles)
@@ -28,7 +30,7 @@ Back to the [README](README.md).
 ## How loadouts work
 
 - **Matches only.** Loadouts work only while a match is running. In **WarZone** they stay locked until **both teams have placed their beacon**. The start kit is the one exception and can be taken during beacon setup. Skins and inventory clean-up always work, even outside a match.
-- **Cooldowns are per category, not per item.** Taking an AK-47 puts *all* assault rifles on cooldown. Taking a T-90A locks *all* ground vehicles. Helicopters, aircraft, boats, each weapon class and each kit have their own pools. If you try too early, you're told how many seconds are left.
+- **Cooldowns are per category, not per item.** Taking an AK-47 puts *all* assault rifles on cooldown. Taking a T-90A locks *all* ground vehicles. Helicopters, aircraft, boats, strategic drones, tactical drones, EW gear, each weapon class and each kit have their own pools. **How long** the pool stays locked depends on which item you took: a heavier pick means a longer wait. If you try too early, you're told how many seconds are left.
 - **One item per category.** A new weapon replaces any other weapon of the same class you're holding. A new vehicle, helicopter, aircraft or boat replaces any undeployed one of the same type, along with its leftover munitions.
 - **Ammo top-up.** Weapon loadouts top your ammo up to a fixed amount. If you already have that much, you just get the gun.
 - **Refills don't waste cooldowns.** If you're already full, nothing happens and the cooldown doesn't start.
@@ -41,7 +43,7 @@ Back to the [README](README.md).
 | Loadout group | TDM-2 | FFA | TDM-4 | Vehicle Mode | Gun Game | WarZone |
 |---|:-:|:-:|:-:|:-:|:-:|:-:|
 | Weapons | ✓ | ✓ | ✓ | ✗ | ✗ | ✓ |
-| Kits | ✓ | ✓ | ✓ | ✗ | ✗ | ✓ |
+| Kits, drones, EW | ✓ | ✓ | ✓ | ✗ | ✗ | ✓ |
 | Ground vehicles, helicopters, aircraft, boats | ✓ | ✓ | ✓ | ✓ **no cooldown** | ✗ | ✓ |
 | Start kit, armor, refills, extras | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Skins | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -49,8 +51,9 @@ Back to the [README](README.md).
 **Special cooldown rules:**
 
 - **Vehicle Mode:** every ground vehicle, helicopter, aircraft and boat loadout has **no cooldown**. You can respawn your vehicle as often as you like.
-- **WarZone:** the **MLRS kit** and the **assault / light attack helicopters** (Black Hawk, Little Bird, Comanche, Ka-52) have half their usual cooldown: **10 min instead of 20**.
+- **WarZone:** the **MLRS kit** and the **light helicopters** have half their usual cooldown (MLRS, Black Hawk, Comanche, Ka-52: **10 min instead of 20**; Little Bird: **5 min instead of 10**).
 - **Gun Game:** you get your weapons from the Gun Game progression, not from loadouts. Refills, armor and extras still work.
+- **Admin drone rules:** admins can switch off **all tactical drones** or only the **tactical strike drones** (Strike FPV and Heavy bomber) for a match. Strategic drones are not affected.
 
 ---
 
@@ -63,7 +66,7 @@ Weapons, armor, refills (except fuel), the **Grenades**, **Mines** and **Thumper
 | RPG kit | ✓ | ✓ | ✓ | ✓ | · | ✓ | ✓ | ✓ | ✓ | · | ✓ | · | ✓ |
 | C4 kit | ✓ | ✓ | ✓ | · | · | ✓ | ✓ | ✓ | ✓ | · | ✓ | · | ✓ |
 | Mortar kit, TOW kit | ✓ | ✓ | ✓ | · | · | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | ✓ |
-| Drones kit | ✓ | ✓ | · | · | · | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | ✓ |
+| Tactical drones, EW gear | ✓ | ✓ | · | · | · | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | ✓ |
 | MLRS kit | ✓ | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ |
 | Javelin kit, Igla kit | · | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ |
 | Fuel refill | · | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ |
@@ -72,7 +75,7 @@ Weapons, armor, refills (except fuel), the **Grenades**, **Mines** and **Thumper
 | Heavy attack / cargo helicopters | · | · | · | · | · | · | · | · | · | · | · | · | ✓ |
 | Aircraft | · | · | · | · | · | · | · | · | · | · | · | · | ✓ |
 | Boats | · | · | · | · | · | · | · | · | · | · | · | · | ✓ |
-| Shahed, Orlan, Iskander-M, Radar kits | · | · | · | · | · | · | · | · | · | · | · | · | ✓ |
+| Strategic drones, Iskander-M kit, Radar kit | · | · | · | · | · | · | · | · | · | · | · | · | ✓ |
 
 > When no map is configured, all map restrictions are lifted.
 
@@ -108,40 +111,27 @@ You can't re-equip the armor type you're already wearing. Camos apply to heavy a
 
 ## Weapons
 
-Weapons are disabled in Vehicle Mode and Gun Game.
+Each weapon class shares one cooldown. The length depends on the weapon you took. Weapons are disabled in Vehicle Mode and Gun Game.
 
-| Class | Weapons | Ammo topped up to |
-|---|---|---|
-| **Assault rifles** (`ar/`) | AK-12, AK-47, HK-416, Insidious, M4, MK-14, QBZ-191, QBZ-95 | 192 rifle |
-| **LMGs** (`lmg/`) | Devotion, M-60, M-134 Minigun, RPK | 192 rifle |
-| | Browning M2HB | 64 heavy |
-| **Pistols** (`pistol/`) | Glock-18, M-1911A1, MP-443 | 192 handgun |
-| | Trachelium revolver | 64 rifle |
-| **Rifles** (`rifle/`) | Kar-98k, Mosin | 32 sniper |
-| | Marlin, SKS | 64 rifle |
-| **Shotguns** (`shotgun/`) | AA-12, M-870 MCS | 64 shotgun |
-| **SMGs** (`smg/`) | MP5, Vector | 192 handgun |
-| **Snipers** (`sniper/`) | AWM, Barrett M98B, Sentinel, SVD | 32 sniper |
-| | NTW-20 | 32 heavy |
-
-| Weapons | Cooldown |
-|---|---|
-| AK-47, M4 | 8 min |
-| AK-12, Insidious, QBZ-95 | 10 min |
-| HK-416, MK-14, QBZ-191 | 12 min |
-| Devotion, M-60, RPK | 10 min |
-| M-134 Minigun | 12 min |
-| Browning M2HB | 14 min |
-| MP-443 | 6 min |
-| M-1911A1 | 8 min |
-| Glock-18, Trachelium revolver | 10 MIN |
-| Marlin, SKS | 8 min |
-| Kar-98k, Mosin | 10 min |
-| AA-12, M-870 MCS | 10 min |
-| MP5, Vector | 10 min |
-| Sentinel, SVD | 10 min |
-| AWM, Barrett M98B | 12 min |
-| NTW-20 | 14 min |
+| Class | Weapon | Ammo topped up to | Cooldown |
+|---|---|---|---|
+| **Assault rifles** (`ar/`) | AK-47, M4 | 192 rifle | 8 min |
+| | AK-12, Insidious, QBZ-95 | 192 rifle | 10 min |
+| | HK-416, MK-14, QBZ-191 | 192 rifle | 12 min |
+| **LMGs** (`lmg/`) | Devotion, M-60, RPK | 192 rifle | 10 min |
+| | M-134 Minigun | 192 rifle | 12 min |
+| | Browning M2HB | 64 heavy | 14 min |
+| **Pistols** (`pistol/`) | M-1911A1 | 192 handgun | 6 min |
+| | MP-443 | 192 handgun | 8 min |
+| | Glock-18 | 192 handgun | 10 min |
+| | Trachelium revolver | 64 rifle | 10 min |
+| **Rifles** (`rifle/`) | Marlin, SKS | 64 rifle | 8 min |
+| | Kar-98k, Mosin | 32 sniper | 10 min |
+| **Shotguns** (`shotgun/`) | AA-12, M-870 MCS | 64 shotgun | 10 min |
+| **SMGs** (`smg/`) | MP5, Vector | 192 handgun | 10 min |
+| **Snipers** (`sniper/`) | Sentinel, SVD | 32 sniper | 10 min |
+| | AWM, Barrett M98B | 32 sniper | 12 min |
+| | NTW-20 | 32 heavy | 14 min |
 
 ---
 
@@ -158,14 +148,57 @@ Each kit has its own cooldown. Kits are disabled in Vehicle Mode and Gun Game. S
 | **C4** | 8 remote C4 charges, detonator, defuser | 10 min |
 | **Mortar** | 2 mortars, 2 monitors, artillery indicator, 16 mortar shells | 10 min |
 | **TOW** | Deployable TOW launcher + 8 anti-tank missiles | 10 min |
-| **Drones** | 8 drones, 2 monitors, 8 mortar shells to attach | 10 min |
 | **Javelin** | Javelin + 8 missiles | 10 min |
 | **Igla** | Igla 9K38 MANPADS + 8 anti-air missiles | 10 min |
 | **MLRS** | Deployable Type 63 MLRS + 8 AP, 8 HE, 4 cluster rockets, artillery indicator | 20 min (**10 min in WarZone**) |
-| **Shahed** | Shahed strike UAV + launcher + control tablet | 10 min |
-| **Orlan** | Orlan recon UAV + launcher + control tablet | 10 min |
 | **Radar** | Radar for air target display and tracking | 20 min |
 | **Iskander-M** | 1 Iskander-M ballistic missile (you'll need a launch site) | 20 min |
+
+---
+
+## Drones
+
+Drones are split into two pools, each with its own shared cooldown. Taking a drone replaces any other drone of the same pool you're carrying. Drones are disabled in Vehicle Mode and Gun Game.
+
+### Strategic drones
+
+**WarZone map only.** Long-range UAVs flown from a launcher and a control tablet. Admin drone rules don't affect them.
+
+| Drone | You get | Cooldown |
+|---|---|---|
+| **Orlan** | Orlan recon UAV, recon launcher, recon tablet | 5 min |
+| **ZALA Kub-BLA** | Kub-BLA loitering munition, strike launcher, strike tablet | 8 min |
+| **Shahed** | Shahed strike UAV, strike launcher, strike tablet | 10 min |
+| **Bayraktar TB2** | TB2 recon-strike UAV, recon launcher, recon tablet, 4 guided missiles | 10 min |
+
+### Tactical drones
+
+Short-range drones flown through a monitor. Every tactical drone loadout comes with 2 monitors and 2 batteries. Admins can disable this pool for a match.
+
+| Drone | You get | Cooldown |
+|---|---|---|
+| **Delivery** | 2 delivery drones, 2 extraction crates | 5 min |
+| **Recon FPV** | 8 recon drones | 8 min |
+| **Strike FPV** | 8 FPV drones, 8 mortar shells to drop | 10 min |
+| **Heavy bomber** | 2 heavy bomber drones, 16 mortar shells to drop | 10 min |
+
+Strike FPV and Heavy bomber count as **strike drones**. Admins can switch these two off on their own and leave Delivery and Recon available.
+
+---
+
+## Electronic warfare
+
+**One shared cooldown for all EW gear.** Available on the same maps as tactical drones. EW is disabled in Vehicle Mode and Gun Game. Powered EW gear comes with a battery.
+
+| Loadout | You get | Cooldown |
+|---|---|---|
+| **Drone net** | 8 drone nets | 5 min |
+| **RF direction finder** | Direction finder + battery | 6 min |
+| **EMP gun** | Electromagnetic gun + battery | 8 min |
+| **Portable jammer** | Portable jammer, phased array module, battery | 8 min |
+| **RF drone spoofer** | Drone spoofer + battery | 10 min |
+| **Optic fiber** | 64 fiber-optic cable | 10 min |
+| **Stationary jammer** | Stationary jammer, phased array module, battery | 12 min |
 
 ---
 
@@ -251,9 +284,9 @@ Autocannon shells, coaxial MG ammo and 16 ATGMs (LAV-150: autocannon only). Spru
 
 ### Trucks, MRAPs and technicals
 
-| Vehicle | Variants | You get | Cooldown |
+| Vehicle | Variants | Armament | Cooldown |
 |---|---|---|---|
-| Humvee | basic, camo, sand | 192 heavy ammo | 6 min |
+| Humvee RWS | basic, camo, sand | 192 heavy ammo | 6 min |
 | Humvee Mk 19 | basic | 64 × 40 mm grenades, 4 ATGMs | 8 min |
 | Ural-4320 | basic, camo | — | 5 min |
 | Ural Typhoon MRAP | basic, camo, snow | — | 5 min |
@@ -270,10 +303,10 @@ Autocannon shells, coaxial MG ammo and 16 ATGMs (LAV-150: autocannon only). Spru
 
 | Helicopter | You get | Maps | Cooldown |
 |---|---|---|---|
-| **AH-6 Little Bird** | Cannon shells, 16 rockets | Army Base, Trenches, WarZone | 10 min (**5 in WarZone**) |
-| **MH-60M Black Hawk** | Cannon shells, 32 rockets | Army Base, Trenches, WarZone | 20 min (**10 in WarZone**) |
-| **RAH-66 Comanche** | Cannon shells, 32 rockets, 4 AA missiles, 4 Hellfires | Army Base, Trenches, WarZone | 20 min (**10 in WarZone**) |
-| **Ka-52 Alligator** | Cannon shells, 32 rockets, 4 AA missiles, 4 ATGMs | Army Base, Trenches, WarZone | 20 min (**10 in WarZone**) |
+| **AH-6 Little Bird** | Cannon shells, 16 rockets | Trenches, Army Base, WarZone | 10 min (**5 in WarZone**) |
+| **MH-60M Black Hawk** | Cannon shells, 32 rockets | Trenches, Army Base, WarZone | 15 min (**10 in WarZone**) |
+| **RAH-66 Comanche** | Cannon shells, 32 rockets, 4 AA missiles, 4 Hellfires | Trenches, Army Base, WarZone | 20 min (**10 in WarZone**) |
+| **Ka-52 Alligator** | Cannon shells, 32 rockets, 4 AA missiles, 4 ATGMs | Trenches, Army Base, WarZone | 20 min (**10 in WarZone**) |
 | **V-22 Osprey** | Cannon shells | WarZone | 8 min |
 | **AH-64 Apache** | Cannon shells, 32 rockets, 8 AA missiles, 8 Hellfires | WarZone | 13.5 min |
 | **Mi-28 Havoc** | Cannon shells, 32 rockets, 8 AA missiles, 8 ATGMs | WarZone | 13.5 min |

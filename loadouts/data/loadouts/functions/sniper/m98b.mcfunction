@@ -34,4 +34,4 @@ execute as @s[scores={temp_count=..31}] run tellraw @s {"text":"[✔] Barret M98
 
 execute as @s[scores={temp_count=32..}] run tellraw @s {"text":"[✔] Barret M98B equipped (ammo already full)","color":"yellow"}
 
-scoreboard players set @s sniper_cd 12000
+scoreboard players set @s sniper_cd 14400

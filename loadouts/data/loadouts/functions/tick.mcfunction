@@ -7,13 +7,10 @@ scoreboard players remove @a[scores={thumper_cd=1..}] thumper_cd 1
 scoreboard players remove @a[scores={mine_cd=1..}] mine_cd 1
 scoreboard players remove @a[scores={c4_cd=1..}] c4_cd 1
 scoreboard players remove @a[scores={grenade_cd=1..}] grenade_cd 1
-scoreboard players remove @a[scores={drone_cd=1..}] drone_cd 1
 scoreboard players remove @a[scores={mortar_cd=1..}] mortar_cd 1
 scoreboard players remove @a[scores={tow_cd=1..}] tow_cd 1
 scoreboard players remove @a[scores={mlrs_cd=1..}] mlrs_cd 1
 scoreboard players remove @a[scores={radar_cd=1..}] radar_cd 1
-scoreboard players remove @a[scores={shahed_cd=1..}] shahed_cd 1
-scoreboard players remove @a[scores={orlan_cd=1..}] orlan_cd 1
 scoreboard players remove @a[scores={iskander_cd=1..}] iskander_cd 1
 
 # Refill
@@ -50,7 +47,13 @@ scoreboard players remove @a[scores={boat_cd=1..}] boat_cd 1
 scoreboard players remove @a[scores={heli_cd=1..}] heli_cd 1
 scoreboard players remove @a[scores={aircraft_cd=1..}] aircraft_cd 1
 
-# Respawn + immunity
+# Drones & EW
+
+scoreboard players remove @a[scores={drone_strategic_cd=1..}] drone_strategic_cd 1
+scoreboard players remove @a[scores={drone_tactical_cd=1..}] drone_tactical_cd 1
+scoreboard players remove @a[scores={ew_cd=1..}] ew_cd 1
+
+# Respawn & immunity
 
 execute as @a if score #game match_mode matches 1..6 if score @s deaths > @s deaths_old run tag @s add pending_immune
 
@@ -67,6 +70,8 @@ tag @e[type=player,tag=pending_spawn] remove pending_spawn
 execute as @e[type=player,tag=pending_immune] run scoreboard players set @s spawn_immune 200
 execute as @e[type=player,tag=pending_immune] run tellraw @s {"text":"Spawn protection (10s)","color":"green"}
 tag @e[type=player,tag=pending_immune] remove pending_immune
+
+execute if score #game realistic matches 1 if score #game match_mode matches 1..3 as @a if score @s deaths > @s deaths_old if score @s kills matches 1.. run scoreboard players remove @s kills 1
 
 execute as @a run scoreboard players operation @s deaths_old = @s deaths
 
@@ -96,12 +101,6 @@ scoreboard players remove @a[scores={thermal_cd=1..}] thermal_cd 1
 
 execute as @a[scores={thermal_timer=0}] at @s run curios clear @s head
 execute as @a[scores={thermal_timer=0}] at @s run clear @s superbwarfare:thermal_imaging_goggles
-
-# Walkie Talkies
-
-execute if score #game match_mode matches 1 run function loadouts:admin/radio/lock_tdm2
-execute if score #game match_mode matches 3 run function loadouts:admin/radio/lock_tdm4
-execute if score #game match_mode matches 6 run function loadouts:admin/radio/lock_tdm2
 
 # Gun Game
 
