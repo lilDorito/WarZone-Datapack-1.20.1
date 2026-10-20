@@ -12,3 +12,4 @@ execute if score #map map matches 10 run team modify MapRow prefix ["",{"text":"
 execute if score #map map matches 11 run team modify MapRow prefix ["",{"text":"Map: ","color":"yellow","bold":true},{"text":"Kombinat","color":"gray"}]
 execute if score #map map matches 12 run team modify MapRow prefix ["",{"text":"Map: ","color":"yellow","bold":true},{"text":"Outpost","color":"gray"}]
 execute if score #map map matches 13 run team modify MapRow prefix ["",{"text":"Map: ","color":"yellow","bold":true},{"text":"WarZone","color":"gray"}]
+execute if score #map map matches 14 run team modify MapRow prefix ["",{"text":"Map: ","color":"yellow","bold":true},{"text":"Exclusion Zone","color":"gray"}]
