@@ -61,7 +61,7 @@ Back to the [README](README.md).
 
 Weapons, armor, refills (except fuel), the **Grenades**, **Mines** and **Thumper** kits, thermal vision and skins work on **every map**. Everything else is limited to certain maps:
 
-| Loadout | Ind. 1 | Ind. 2 | Forest | DUGA | Village | Radar | Trenches | Hospital | Army Base | Wild West | Kombinat | Outpost | WarZone | The Zone |
+| Loadout | Ind. 1 | Ind. 2 | Forest | DUGA | Village | Radar | Trenches | Hospital | Army Base | Wild West | Kombinat | Outpost | WarZone | Exclusion Zone |
 |---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | RPG kit | ✓ | ✓ | ✓ | ✓ | · | ✓ | ✓ | ✓ | ✓ | · | ✓ | · | ✓ | ✓ |
 | C4 kit | ✓ | ✓ | ✓ | · | · | ✓ | ✓ | ✓ | ✓ | · | ✓ | · | ✓ | ✓ |
