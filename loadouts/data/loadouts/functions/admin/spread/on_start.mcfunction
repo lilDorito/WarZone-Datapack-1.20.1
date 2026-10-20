@@ -10,3 +10,4 @@ execute if score #map map matches 9 run spreadplayers -438 453 20 190 false @a
 execute if score #map map matches 10 run spreadplayers 20 -6 10 95 false @a
 execute if score #map map matches 11 run spreadplayers 181 1419 10 100 false @a
 execute if score #map map matches 12 run spreadplayers 616 950 6 60 false @a
+execute if score #map map matches 14 run spreadplayers 488 1222 20 250 false @a

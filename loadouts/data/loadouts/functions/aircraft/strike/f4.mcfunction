@@ -72,7 +72,7 @@ clear @s ashvehicle:gbu57item
 
 give @s superbwarfare:crowbar 1
 give @s superbwarfare:container{BlockEntityTag:{id:"superbwarfare:container",EntityType:"ashvehicle:f-4",Count:1b}} 1
-give @s superbwarfare:medium_aerial_bomb 6
+give @s superbwarfare:medium_aerial_bomb 4
 give @s ashvehicle:aim9item 4
 
 clear @s superbwarfare:small_shell_ap

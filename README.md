@@ -119,7 +119,7 @@ The plain `start_tdm2` / `start_tdm4` / `ffa/start` functions reuse whichever st
 ## Shared match features
 
 - **Spawn protection:** 10 s of Resistance V after every respawn. It ends early if you deal damage.
-- **Team spawns (TDM-2 / TDM-4 / WarZone):** up to 3 spawn points per team, used in rotation. They are stored with Server Waypoint, with a fallback to the default spawn if none are set.
+- **Team spawns (TDM-2 / TDM-4 / WarZone):** up to 3 spawn points per team, used in rotation. They are stored with Server Waypoint Reworked, with a fallback to the default spawn if none are set.
 - **Random spread (FFA / Vehicles / Gun Game):** players are spread over a map-specific area at round start.
 - **Live HUD:** kills/deaths in the actionbar. The sidebar shows the current mode, the map and the leading team (or the WarZone winner).
 - **Late join:** players who join mid-match are assigned to a team automatically.
@@ -148,8 +148,9 @@ Maps are selected with `function loadouts:admin/map/<name>`. The selection contr
 | 11 | `admin/map/kombinat` | Kombinat |
 | 12 | `admin/map/outpost` | Outpost |
 | 13 | `admin/map/warzone` | WarZone |
+| 14 | `admin/map/zone` | Exclusion Zone |
 
-The large maps (**Trenches, Army Base, Kombinat, WarZone**) support vehicles. **WarZone** is the only map that allows aircraft, boats, heavy helicopters, strategic drones (Shahed, Orlan, Bayraktar TB2, Kub-BLA) and the Iskander-M and Radar kits.
+The large maps (**Trenches, Army Base, Kombinat, WarZone, Exclusion Zone**) support vehicles. **WarZone** is the only map that allows aircraft, boats, heavy helicopters, strategic drones (Shahed, Orlan, Bayraktar TB2, Kub-BLA) and the Iskander-M and Radar kits.
 
 ---
 

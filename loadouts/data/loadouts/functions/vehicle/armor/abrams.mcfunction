@@ -16,6 +16,7 @@ execute if score #map map matches 7 run tag @s add allowed
 execute if score #map map matches 9 run tag @s add allowed
 execute if score #map map matches 11 run tag @s add allowed
 execute if score #map map matches 13 run tag @s add allowed
+execute if score #map map matches 14 run tag @s add allowed
 execute unless entity @s[tag=allowed] run tellraw @s {"text":"[×] Vehicle loadouts are not allowed on this map!","color":"red"}
 execute unless entity @s[tag=allowed] run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
 execute unless entity @s[tag=allowed] run return 0

@@ -86,4 +86,4 @@ give @s superbwarfare:flying_flare_ammo 16
 
 tellraw @s {"text":"[✔] F/A-18 Hornet loadout received!","color":"green"}
 
-execute unless score #game match_mode matches 4 run scoreboard players set @s aircraft_cd 12000
+execute unless score #game match_mode matches 4 run scoreboard players set @s aircraft_cd 13200

@@ -28,6 +28,7 @@ execute if score #map map matches 7 run give @s superbwarfare:large_battery_pack
 execute if score #map map matches 9 run give @s superbwarfare:large_battery_pack{Energy:20000000} 2
 execute if score #map map matches 11 run give @s superbwarfare:large_battery_pack{Energy:20000000} 2
 execute if score #map map matches 13 run give @s superbwarfare:large_battery_pack{Energy:20000000} 2
+execute if score #map map matches 14 run give @s superbwarfare:large_battery_pack{Energy:20000000} 2
 
 execute if score #map map matches 13 run give @s minecraft:obsidian 3
 

@@ -61,21 +61,22 @@ Back to the [README](README.md).
 
 Weapons, armor, refills (except fuel), the **Grenades**, **Mines** and **Thumper** kits, thermal vision and skins work on **every map**. Everything else is limited to certain maps:
 
-| Loadout | Ind. 1 | Ind. 2 | Forest | DUGA | Village | Radar | Trenches | Hospital | Army Base | Wild West | Kombinat | Outpost | WarZone |
-|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| RPG kit | ✓ | ✓ | ✓ | ✓ | · | ✓ | ✓ | ✓ | ✓ | · | ✓ | · | ✓ |
-| C4 kit | ✓ | ✓ | ✓ | · | · | ✓ | ✓ | ✓ | ✓ | · | ✓ | · | ✓ |
-| Mortar kit, TOW kit | ✓ | ✓ | ✓ | · | · | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | ✓ |
-| Tactical drones, EW gear | ✓ | ✓ | · | · | · | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | ✓ |
-| MLRS kit | ✓ | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ |
-| Javelin kit, Igla kit | · | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ |
-| Fuel refill | · | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ |
-| Ground vehicles | · | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ |
-| Assault / light attack helicopters | · | · | · | · | · | · | ✓ | · | ✓ | · | · | · | ✓ |
-| Heavy attack / cargo helicopters | · | · | · | · | · | · | · | · | · | · | · | · | ✓ |
-| Aircraft | · | · | · | · | · | · | · | · | · | · | · | · | ✓ |
-| Boats | · | · | · | · | · | · | · | · | · | · | · | · | ✓ |
-| Strategic drones, Iskander-M kit, Radar kit | · | · | · | · | · | · | · | · | · | · | · | · | ✓ |
+| Loadout | Ind. 1 | Ind. 2 | Forest | DUGA | Village | Radar | Trenches | Hospital | Army Base | Wild West | Kombinat | Outpost | WarZone | The Zone |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| RPG kit | ✓ | ✓ | ✓ | ✓ | · | ✓ | ✓ | ✓ | ✓ | · | ✓ | · | ✓ | ✓ |
+| C4 kit | ✓ | ✓ | ✓ | · | · | ✓ | ✓ | ✓ | ✓ | · | ✓ | · | ✓ | ✓ |
+| Mortar kit, TOW kit | ✓ | ✓ | ✓ | · | · | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | ✓ | ✓ |
+| Tactical drones, EW gear | ✓ | ✓ | · | · | · | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | ✓ | ✓ |
+| MLRS kit | ✓ | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ | ✓ |
+| Javelin kit, Igla kit | · | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ | ✓ |
+| Fuel refill | · | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ | ✓ |
+| Ground vehicles | · | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ | ✓ |
+| Heavy anti-air (Pantsir-S1) | · | · | · | · | · | · | · | · | · | · | · | · | ✓ | ✓ |
+| Assault / light attack helicopters | · | · | · | · | · | · | ✓ | · | ✓ | · | · | · | ✓ | ✓ |
+| Heavy attack / cargo helicopters | · | · | · | · | · | · | · | · | · | · | · | · | ✓ | ✓ |
+| Aircraft | · | · | · | · | · | · | · | · | · | · | · | · | ✓ | · |
+| Boats | · | · | · | · | · | · | · | · | · | · | · | · | ✓ | · |
+| Strategic drones, Iskander-M kit, Radar kit | · | · | · | · | · | · | · | · | · | · | · | · | ✓ | · |
 
 > When no map is configured, all map restrictions are lifted.
 
@@ -91,7 +92,7 @@ Weapons, armor, refills (except fuel), the **Grenades**, **Mines** and **Thumper
 | Medical | 8 medkits, 32 armor plates |
 | Gear | Parachute (back slot), netherite pickaxe (Efficiency V, Unbreaking III), combat knife (boosted damage), 32 dirt |
 | Armor | Heavy armor in your selected camo (desert by default) |
-| **Trenches, Army Base, Kombinat, WarZone** | + 2 fuel cells (large battery packs) |
+| **Trenches, Army Base, Kombinat, WarZone, Exclusion Zone** | + 2 fuel cells (large battery packs) |
 | **WarZone** | + 3 obsidian, + artillery indicator |
 
 ---
@@ -330,15 +331,15 @@ Autocannon shells, coaxial MG ammo and 16 ATGMs (LAV-150: autocannon only). Spru
 | | Su-57 Felon | 4 R-60, 6 R-77 | 14 min |
 | | F-22 Raptor | 4 AIM-9, 6 AIM-120 | 14.5 min |
 | **Interceptor** | F-14 Tomcat | 4 AIM-9, 4 AIM-54 Phoenix | 12 min |
-| **Multirole** | F/A-18 Hornet | 4 medium bombs, 2 AIM-9, 2 AIM-120 | 10 min |
+| **Multirole** | MiG-29 Fulcrum | 2 AGMs, 2 medium bombs, 2 R-60, 2 R-77 | 10 min |
 | | F-16 Fighting Falcon | 2 AGMs, 2 medium bombs, 2 AIM-9, 2 AIM-120 | 10 min |
-| | F-2 Viper Zero | 4 AGMs, 2 AIM-9, 2 AIM-120 | 10 min |
-| | MiG-29 Fulcrum | 2 AGMs, 2 medium bombs, 2 R-60, 2 R-77 | 10 min |
-| | Eurofighter Typhoon | 2 medium bombs, 6 AIM-9, 2 AIM-120 | 13.5 min |
+| | F/A-18 Hornet | 4 medium bombs, 2 AIM-9, 2 AIM-120 | 11 min |
+| | F-2 Viper Zero | 4 AGMs, 2 AIM-9, 2 AIM-120 | 12 min |
+| | Eurofighter Typhoon | 2 medium bombs, 6 AIM-9, 2 AIM-120 | 12.5 min |
 | | JAS 39E Gripen | 2 AGMs, 2 medium bombs, 2 AIM-9, 4 AIM-120 | 13.5 min |
 | | F-35A Lightning II | 2 large bombs, 4 AGM-158, 4 AIM-120 | 14.5 min |
 | | F-35B Lightning II | 2 medium bombs, 4 AGM-158, 4 AIM-120 | 14.5 min |
-| **Strike** | F-4 Phantom II | 6 medium bombs, 4 AIM-9 | 8 min |
+| **Strike** | F-4 Phantom II | 4 medium bombs, 4 AIM-9 | 8 min |
 | | Su-34 Fullback | 2 AGMs, 4 large bombs, 2 R-60, 2 R-77 | 12 min |
 | **Close air support** | A-10 Thunderbolt II | 4 AGMs, 6 medium + 2 large bombs, 32 rockets | 10 min |
 | | Su-25 Frogfoot | 4 AGMs, 6 medium + 2 large bombs, 32 rockets | 10 min |
