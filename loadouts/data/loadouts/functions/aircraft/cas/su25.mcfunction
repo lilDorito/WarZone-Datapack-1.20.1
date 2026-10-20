@@ -89,4 +89,4 @@ give @s superbwarfare:flying_flare_ammo 16
 
 tellraw @s {"text":"[✔] Su-25 Frogfoot loadout received!","color":"green"}
 
-execute unless score #game match_mode matches 4 run scoreboard players set @s aircraft_cd 12000
+execute unless score #game match_mode matches 4 run scoreboard players set @s aircraft_cd 14400
