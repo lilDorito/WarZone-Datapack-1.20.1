@@ -41,13 +41,13 @@ clear @s sbw_ew_addon:jammer
 clear @s sbw_ew_addon:portable_jammer
 clear @s sbw_ew_addon:phased_array_module
 clear @s sbw_ew_addon:electromagnetic_gun
-clear @s sbw_ew_addon:drone_interceptor
+clear @s sbw_ew_addon:signal_interceptor
 
-give @s sbw_ew_addon:drone_interceptor 1
+give @s sbw_ew_addon:signal_interceptor 1
 
 execute store result score @s temp_count run clear @s superbwarfare:battery 0
 execute if score @s temp_count matches ..1 run give @s superbwarfare:battery{Energy:100000} 1
 
-tellraw @s {"text":"[✔] RF drone spoofer received!","color":"green"}
+tellraw @s {"text":"[✔] RF signal interceptor received!","color":"green"}
 
 scoreboard players set @s ew_cd 12000

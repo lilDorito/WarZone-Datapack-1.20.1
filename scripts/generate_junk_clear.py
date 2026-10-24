@@ -206,7 +206,7 @@ ALLOWED_ITEMS = [
     "sbw_ew_addon:fiber_optic_cable",
     "sbw_ew_addon:drone_net",
     "sbw_ew_addon:electromagnetic_gun",
-    "sbw_ew_addon:drone_interceptor",
+    "sbw_ew_addon:signal_interceptor",
     "sbw_ew_addon:direction_finder",
 ]
 

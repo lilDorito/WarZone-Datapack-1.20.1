@@ -197,7 +197,7 @@ Strike FPV and Heavy bomber count as **strike drones**. Admins can switch these 
 | **RF direction finder** | Direction finder + battery | 6 min |
 | **EMP gun** | Electromagnetic gun + battery | 8 min |
 | **Portable jammer** | Portable jammer, phased array module, battery | 8 min |
-| **RF drone spoofer** | Drone spoofer + battery | 10 min |
+| **Signal interceptor** | Signal interceptor + battery | 10 min |
 | **Optic fiber** | 64 fiber-optic cable | 10 min |
 | **Stationary jammer** | Stationary jammer, phased array module, battery | 12 min |
 

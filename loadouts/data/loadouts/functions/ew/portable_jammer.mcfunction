@@ -41,7 +41,7 @@ clear @s sbw_ew_addon:jammer
 clear @s sbw_ew_addon:portable_jammer
 clear @s sbw_ew_addon:phased_array_module
 clear @s sbw_ew_addon:electromagnetic_gun
-clear @s sbw_ew_addon:drone_interceptor
+clear @s sbw_ew_addon:signal_interceptor
 
 give @s sbw_ew_addon:portable_jammer 1
 give @s sbw_ew_addon:phased_array_module 1
