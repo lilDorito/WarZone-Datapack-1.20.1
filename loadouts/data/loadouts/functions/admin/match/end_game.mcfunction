@@ -14,7 +14,7 @@ title @a title {"text":"MATCH ENDED","color":"gold","bold":true}
 title @a subtitle {"text":"Final results are in chat","color":"gray"}
 playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 1 1
 
-tellraw @a ["",{"text":"========== ","color":"dark_gray"},{"text":"MATCH RESULTS","color":"gold","bold":true},{"text":" ==========","color":"dark_gray"}]
+tellraw @a ["",{"text":"    ","color":"gray"},{"text":"PTS","color":"yellow"},{"text":" | ","color":"dark_gray"},{"text":"KLS","color":"green"},{"text":" | ","color":"dark_gray"},{"text":"DTH","color":"red"},{"text":"  Player","color":"gray"}]
 tellraw @a ["",{"text":"Player","color":"gray"},{"text":" - ","color":"dark_gray"},{"text":"Points","color":"yellow"},{"text":" - ","color":"dark_gray"},{"text":"Kills","color":"green"},{"text":" - ","color":"dark_gray"},{"text":"Deaths","color":"red"}]
 
 tag @a add end_pending

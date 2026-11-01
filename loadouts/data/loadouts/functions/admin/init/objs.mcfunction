@@ -125,6 +125,13 @@ scoreboard objectives add color_taken dummy
 scoreboard objectives add final_pts dummy
 scoreboard objectives add final_kills dummy
 scoreboard objectives add final_deaths dummy
+scoreboard objectives add pad_r dummy
+scoreboard objectives add pad_p1 dummy
+scoreboard objectives add pad_p2 dummy
+scoreboard objectives add pad_k1 dummy
+scoreboard objectives add pad_k2 dummy
+scoreboard objectives add pad_d1 dummy
+scoreboard objectives add pad_d2 dummy
 
 # Values
 scoreboard players set ticks_divisor const 20
