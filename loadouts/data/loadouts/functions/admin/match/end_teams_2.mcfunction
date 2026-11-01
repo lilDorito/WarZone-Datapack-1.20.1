@@ -1,0 +1,1 @@
+tellraw @a ["",{"text":"Team totals: ","color":"gray"},{"text":"[Alpha] ","color":"dark_red"},{"score":{"name":"#Red","objective":"team_pts"},"color":"yellow"},{"text":"  |  ","color":"dark_gray"},{"text":"[Bravo] ","color":"blue"},{"score":{"name":"#Blue","objective":"team_pts"},"color":"yellow"}]

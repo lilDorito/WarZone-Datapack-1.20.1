@@ -7,6 +7,9 @@ scoreboard objectives add deaths deathCount "Deaths"
 scoreboard objectives add global dummy
 scoreboard objectives setdisplay sidebar kills
 scoreboard objectives modify kills displayname {"text":"Kills","color":"yellow","bold":true}
+execute if score #game realistic matches 1 run scoreboard objectives modify kills displayname {"text":"Points","color":"yellow","bold":true}
+
+function loadouts:admin/score/reset
 
 scoreboard players reset #ab_timer kills
 scoreboard players reset ab_timer kills

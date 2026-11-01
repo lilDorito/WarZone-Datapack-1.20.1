@@ -1,4 +1,6 @@
 scoreboard players set #game match_mode 3
+scoreboard players set #game variant 0
+function loadouts:admin/match/prepare
 gamerule spawnRadius 0
 
 function loadouts:admin/init/teams
@@ -9,6 +11,7 @@ function loadouts:admin/tdm/assign_tdm4
 
 clear @a sbw_ew_addon:radio
 give @a sbw_ew_addon:radio 1
+tag @a add has_radio
 
 execute if score #game realistic matches 0 run title @a title {"text":"ARCADE TDM-4","color":"gold","bold":true}
 execute if score #game realistic matches 1 run title @a title {"text":"REALISTIC TDM-4","color":"red","bold":true}
@@ -17,4 +20,3 @@ execute if score #game realistic matches 1 run title @a subtitle {"text":"Kills 
 execute if score #game realistic matches 0 run tellraw @a {"text":"[>] Arcade TDM-4 Started!","color":"gold","bold":true}
 execute if score #game realistic matches 1 run tellraw @a {"text":"[>] Realistic TDM-4 Started!","color":"gold","bold":true}
 playsound entity.experience_orb.pickup master @a ~ ~ ~ 1 1
-

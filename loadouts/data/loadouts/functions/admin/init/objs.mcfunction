@@ -117,6 +117,14 @@ scoreboard objectives add map dummy
 scoreboard objectives add wt_sum dummy
 scoreboard objectives add kills_old dummy
 scoreboard objectives add realistic dummy
+scoreboard objectives add variant dummy
+scoreboard objectives add ended dummy
+scoreboard objectives add kills_total dummy
+scoreboard objectives add team_pts dummy
+scoreboard objectives add color_taken dummy
+scoreboard objectives add final_pts dummy
+scoreboard objectives add final_kills dummy
+scoreboard objectives add final_deaths dummy
 
 # Values
 scoreboard players set ticks_divisor const 20
@@ -128,6 +136,10 @@ scoreboard players set #game wz_red_set 0
 scoreboard players set #game wz_blue_set 0
 scoreboard players set #game wz_winner 0
 scoreboard players set #game realistic 0
+scoreboard players set #game variant 0
+scoreboard players set #game ended 0
+scoreboard players set #off_drones global 0
+scoreboard players set #off_strike_drones global 0
 
 tellraw @a {"text":"[>] Objectives successfully initialized","color":"gold","bold":true}
 playsound entity.experience_orb.pickup master @a ~ ~ ~ 1 1

@@ -55,11 +55,11 @@ scoreboard players remove @a[scores={ew_cd=1..}] ew_cd 1
 
 # Respawn & immunity
 
-execute as @a if score #game match_mode matches 1..6 if score @s deaths > @s deaths_old run tag @s add pending_immune
+execute as @a if score #game match_mode matches 1..5 if score @s deaths > @s deaths_old run tag @s add pending_immune
 
-execute as @a if score #game match_mode matches 1 if score @s deaths > @s deaths_old run tag @s add pending_spawn
+execute as @a if score #game match_mode matches 2 if score @s deaths > @s deaths_old run tag @s add pending_spawn
 execute as @a if score #game match_mode matches 3 if score @s deaths > @s deaths_old run tag @s add pending_spawn
-execute as @a if score #game match_mode matches 6 if score @s deaths > @s deaths_old run tag @s add pending_spawn
+execute as @a if score #game match_mode matches 5 if score @s deaths > @s deaths_old run tag @s add pending_spawn
 
 execute as @e[type=player,tag=pending_spawn,team=Red] run function loadouts:admin/tdm/spawns/apply_red_spawn
 execute as @e[type=player,tag=pending_spawn,team=Blue] run function loadouts:admin/tdm/spawns/apply_blue_spawn
@@ -71,7 +71,7 @@ execute as @e[type=player,tag=pending_immune] run scoreboard players set @s spaw
 execute as @e[type=player,tag=pending_immune] run tellraw @s {"text":"Spawn protection (10s)","color":"green"}
 tag @e[type=player,tag=pending_immune] remove pending_immune
 
-execute if score #game realistic matches 1 if score #game match_mode matches 1..3 as @a if score @s deaths > @s deaths_old if score @s kills matches 1.. run scoreboard players remove @s kills 1
+execute unless score #game ended matches 1 if score #game realistic matches 1 if score #game match_mode matches 1..3 as @a if score @s deaths > @s deaths_old if score @s kills matches 1.. run function loadouts:admin/score/remove_point
 
 execute as @a run scoreboard players operation @s deaths_old = @s deaths
 
@@ -104,14 +104,14 @@ execute as @a[scores={thermal_timer=0}] at @s run clear @s superbwarfare:thermal
 
 # Gun Game
 
-execute as @a if score #game match_mode matches 5 if score @s kills > @s kills_old run function loadouts:admin/gungame/advance
-execute as @a if score #game match_mode matches 5 run scoreboard players operation @s kills_old = @s kills
-execute as @a if score #game match_mode matches 5 run function loadouts:admin/gungame/enforce
+execute as @a if score #game match_mode matches 4 if score @s kills > @s kills_old run function loadouts:admin/gungame/advance
+execute as @a if score #game match_mode matches 4 run scoreboard players operation @s kills_old = @s kills
+execute as @a if score #game match_mode matches 4 run function loadouts:admin/gungame/enforce
 
 # WarZone
 
-execute if score #game match_mode matches 6 if score #game wz_state matches 0 run function loadouts:admin/warzone/setup_monitor
-execute if score #game match_mode matches 6 if score #game wz_state matches 1 run function loadouts:admin/warzone/monitor
+execute if score #game match_mode matches 5 if score #game wz_state matches 0 run function loadouts:admin/warzone/setup_monitor
+execute if score #game match_mode matches 5 if score #game wz_state matches 1 run function loadouts:admin/warzone/monitor
 
 # Late join
 

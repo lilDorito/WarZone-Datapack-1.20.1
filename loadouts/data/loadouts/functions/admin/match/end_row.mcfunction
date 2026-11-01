@@ -1,0 +1,3 @@
+scoreboard players add #rank temp_count 1
+tellraw @a ["",{"score":{"name":"#rank","objective":"temp_count"},"color":"gray"},{"text":". ","color":"gray"},{"selector":"@s"},{"text":" - ","color":"dark_gray"},{"score":{"name":"@s","objective":"final_pts"},"color":"yellow"},{"text":" - ","color":"dark_gray"},{"score":{"name":"@s","objective":"final_kills"},"color":"green"},{"text":" - ","color":"dark_gray"},{"score":{"name":"@s","objective":"final_deaths"},"color":"red"}]
+tag @s remove end_pending

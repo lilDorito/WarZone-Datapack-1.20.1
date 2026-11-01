@@ -5,7 +5,10 @@ execute unless entity @s[tag=allowed] run playsound minecraft:block.note_block.b
 execute unless entity @s[tag=allowed] run return 0
 tag @s remove allowed
 
-scoreboard players set #game match_mode 6
+scoreboard players set #game match_mode 5
+scoreboard players set #game realistic 0
+scoreboard players set #game variant 0
+function loadouts:admin/match/prepare
 gamerule spawnRadius 0
 
 function loadouts:admin/init/teams
@@ -27,6 +30,7 @@ execute as @a[team=Blue,sort=random,limit=1] run give @s minecraft:beacon 1
 
 clear @a sbw_ew_addon:radio
 give @a sbw_ew_addon:radio 1
+tag @a add has_radio
 
 tellraw @a {"text":"[>] WarZone Started! Each team has one beacon - place it in your zone to begin.","color":"gold","bold":true}
 playsound entity.experience_orb.pickup master @a ~ ~ ~ 1 1

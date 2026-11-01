@@ -1,5 +1,6 @@
 scoreboard players reset @a kills
 scoreboard players reset @a deaths
+function loadouts:admin/score/reset
 
 execute as @a run scoreboard players add @s kills 0
 execute as @a run scoreboard players add @s deaths 0

@@ -184,13 +184,13 @@ ALLOWED_ITEMS = [
     "ata:missile_launchpad",
     "ata:missile_terminal",
     "ata:missile_link_cable",
-    "ata:recon_uav_launcher",
-    "ata:recon_uav_tablet",
+    "ata:heavy_uav_launcher",
+    "ata:light_uav_launcher",
+    "ata:uav_tablet",
     "ata:orlan",
-    "ata:strike_uav_launcher",
-    "ata:strike_uav_tablet",
     "ata:shahed",
     "ata:shahed_radar",
+    "ata:siren",
 
     # SBW EW
     "sbw_ew_addon:radio",
@@ -208,6 +208,24 @@ ALLOWED_ITEMS = [
     "sbw_ew_addon:electromagnetic_gun",
     "sbw_ew_addon:signal_interceptor",
     "sbw_ew_addon:direction_finder",
+
+    # MH Warfare
+    "mhwarfare:molniya_1",
+    "mhwarfare:hornet",
+    "mhwarfare:lancet_3",
+    "mhwarfare:uj_25",
+    "mhwarfare:sych_1",
+    "mhwarfare:alexa_spatium",
+    "mhwarfare:sting",
+    "mhwarfare:p1_sun",
+
+    # UAV Horizon
+    "uavhorizonmod:gerbera_uav",
+    "uavhorizonmod:geran2k_uav",
+    "uavhorizonmod:geran2seeker_uav",
+    "uavhorizonmod:geran4_uav",
+    "uavhorizonmod:geran4seeker_uav",
+    "uavhorizonmod:fp1_uav",
 ]
 
 MAIN_SLOTS = list(range(36))

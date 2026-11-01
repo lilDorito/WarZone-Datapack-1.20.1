@@ -409,4 +409,3 @@ execute if score @s temp_count matches 3 run data remove storage loadouts:gungam
 execute if score @s temp_count matches 4 store result score s18 gg_gun run data get storage loadouts:gungame pool1[3]
 execute if score @s temp_count matches 4 run data remove storage loadouts:gungame pool1[3]
 scoreboard players remove remaining1 gg_remaining 1
-

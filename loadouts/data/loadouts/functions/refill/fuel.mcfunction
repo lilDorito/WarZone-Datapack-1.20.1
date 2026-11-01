@@ -1,10 +1,14 @@
-execute unless score #game match_mode matches 1..6 run tellraw @s {"text":"[×] Loadout commands are disabled until the match starts.","color":"red"}
-execute unless score #game match_mode matches 1..6 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
-execute unless score #game match_mode matches 1..6 run return 0
+execute unless score #game match_mode matches 1..5 run tellraw @s {"text":"[×] Loadout commands are disabled until the match starts.","color":"red"}
+execute unless score #game match_mode matches 1..5 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute unless score #game match_mode matches 1..5 run return 0
 
-execute if score #game match_mode matches 6 if score #game wz_state matches 0 run tellraw @s {"text":"[×] Loadout commands are disabled until both beacons are placed.","color":"red"}
-execute if score #game match_mode matches 6 if score #game wz_state matches 0 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
-execute if score #game match_mode matches 6 if score #game wz_state matches 0 run return 0
+execute if score #game match_mode matches 5 if score #game wz_state matches 0 run tellraw @s {"text":"[×] Loadout commands are disabled until both beacons are placed.","color":"red"}
+execute if score #game match_mode matches 5 if score #game wz_state matches 0 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute if score #game match_mode matches 5 if score #game wz_state matches 0 run return 0
+
+execute if score #game variant matches 2 run tellraw @s {"text":"[×] This loadout is disabled in Snipers mode!","color":"red"}
+execute if score #game variant matches 2 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute if score #game variant matches 2 run return 0
 
 tag @s remove allowed
 execute if score #map map matches 0 run tag @s add allowed
@@ -12,7 +16,6 @@ execute if score #map map matches 7 run tag @s add allowed
 execute if score #map map matches 9 run tag @s add allowed
 execute if score #map map matches 11 run tag @s add allowed
 execute if score #map map matches 13 run tag @s add allowed
-execute if score #map map matches 14 run tag @s add allowed
 execute unless entity @s[tag=allowed] run tellraw @s {"text":"[×] Fuel is not needed on this map!","color":"red"}
 execute unless entity @s[tag=allowed] run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
 execute unless entity @s[tag=allowed] run return 0

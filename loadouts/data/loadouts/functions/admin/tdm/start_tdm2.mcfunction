@@ -1,4 +1,6 @@
-scoreboard players set #game match_mode 1
+scoreboard players set #game match_mode 2
+scoreboard players set #game variant 0
+function loadouts:admin/match/prepare
 gamerule spawnRadius 0
 
 function loadouts:admin/init/teams
@@ -9,6 +11,7 @@ function loadouts:admin/tdm/assign_tdm2
 
 clear @a sbw_ew_addon:radio
 give @a sbw_ew_addon:radio 1
+tag @a add has_radio
 
 execute if score #game realistic matches 0 run title @a title {"text":"ARCADE TDM-2","color":"gold","bold":true}
 execute if score #game realistic matches 1 run title @a title {"text":"REALISTIC TDM-2","color":"red","bold":true}

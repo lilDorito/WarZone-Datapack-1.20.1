@@ -1,6 +1,9 @@
 clear @a
 
-scoreboard players set #game match_mode 5
+scoreboard players set #game match_mode 4
+scoreboard players set #game realistic 0
+scoreboard players set #game variant 0
+function loadouts:admin/match/prepare
 
 setworldspawn ~ ~ ~
 gamerule spawnRadius 400

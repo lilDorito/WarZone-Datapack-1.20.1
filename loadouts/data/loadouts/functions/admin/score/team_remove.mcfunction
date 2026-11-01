@@ -1,0 +1,16 @@
+execute if entity @s[team=Red] run scoreboard players remove #Red team_pts 1
+execute if entity @s[team=Blue] run scoreboard players remove #Blue team_pts 1
+execute if entity @s[team=Green] run scoreboard players remove #Green team_pts 1
+execute if entity @s[team=Yellow] run scoreboard players remove #Yellow team_pts 1
+execute if entity @s[team=Aqua] run scoreboard players remove #Aqua team_pts 1
+execute if entity @s[team=Gold] run scoreboard players remove #Gold team_pts 1
+execute if entity @s[team=LightPurple] run scoreboard players remove #LightPurple team_pts 1
+execute if entity @s[team=White] run scoreboard players remove #White team_pts 1
+execute if entity @s[team=LightRed] run scoreboard players remove #LightRed team_pts 1
+execute if entity @s[team=DarkBlue] run scoreboard players remove #DarkBlue team_pts 1
+execute if entity @s[team=DarkGreen] run scoreboard players remove #DarkGreen team_pts 1
+execute if entity @s[team=DarkPurple] run scoreboard players remove #DarkPurple team_pts 1
+execute if entity @s[team=DarkAqua] run scoreboard players remove #DarkAqua team_pts 1
+execute if entity @s[team=Gray] run scoreboard players remove #Gray team_pts 1
+execute if entity @s[team=DarkGray] run scoreboard players remove #DarkGray team_pts 1
+execute if entity @s[team=Black] run scoreboard players remove #Black team_pts 1

@@ -30,7 +30,7 @@ Back to the [README](README.md).
 ## How loadouts work
 
 - **Matches only.** Loadouts work only while a match is running. In **WarZone** they stay locked until **both teams have placed their beacon**. The start kit is the one exception and can be taken during beacon setup. Skins and inventory clean-up always work, even outside a match.
-- **Cooldowns are per category, not per item.** Taking an AK-47 puts *all* assault rifles on cooldown. Taking a T-90A locks *all* ground vehicles. Helicopters, aircraft, boats, strategic drones, tactical drones, EW gear, each weapon class and each kit have their own pools. **How long** the pool stays locked depends on which item you took: a heavier pick means a longer wait. If you try too early, you're told how many seconds are left.
+- **Cooldowns are per category, not per item.** Taking an AK-47 puts *all* assault rifles on cooldown. Taking a T-90A locks *all* ground vehicles. Helicopters, aircraft, boats, strategic + interceptor drones (one shared pool), tactical drones, EW gear, each weapon class and each kit have their own pools. **How long** the pool stays locked depends on which item you took: a heavier pick means a longer wait. If you try too early, you're told how many seconds are left.
 - **One item per category.** A new weapon replaces any other weapon of the same class you're holding. A new vehicle, helicopter, aircraft or boat replaces any undeployed one of the same type, along with its leftover munitions.
 - **Ammo top-up.** Weapon loadouts top your ammo up to a fixed amount. If you already have that much, you just get the gun.
 - **Refills don't waste cooldowns.** If you're already full, nothing happens and the cooldown doesn't start.
@@ -40,20 +40,25 @@ Back to the [README](README.md).
 
 ## Restrictions by gamemode
 
-| Loadout group | TDM-2 | FFA | TDM-4 | Vehicle Mode | Gun Game | WarZone |
-|---|:-:|:-:|:-:|:-:|:-:|:-:|
-| Weapons | ✓ | ✓ | ✓ | ✗ | ✗ | ✓ |
-| Kits, drones, EW | ✓ | ✓ | ✓ | ✗ | ✗ | ✓ |
-| Ground vehicles, helicopters, aircraft, boats | ✓ | ✓ | ✓ | ✓ **no cooldown** | ✗ | ✓ |
-| Start kit, armor, refills, extras | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Skins | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Loadout group | FFA | Vehicles | Snipers | TDM-2 | TDM-4 | Gun Game | WarZone |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Pistols, rifles, snipers | ✓ | ✗ | ✓ | ✓ | ✓ | ✗ | ✓ |
+| Assault rifles, LMGs, SMGs, shotguns | ✓ | ✗ | ✗ | ✓ | ✓ | ✗ | ✓ |
+| Kits | ✓ | ✗ | ✗ | ✓ | ✓ | ✗ | ✓ |
+| Strategic, interceptor and tactical drones (except Recon FPV) | ✓ | ✗ | ✗ | ✓ | ✓ | ✗ | ✓ |
+| Recon FPV drone, EW gear | ✓ | ✗ | ✓ | ✓ | ✓ | ✗ | ✓ |
+| Ground vehicles, helicopters, aircraft, boats | ✓ | ✓ **no cooldown** | ✗ | ✓ | ✓ | ✗ | ✓ |
+| Start kit, armor, extras, refills | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Shotgun ammo and fuel refills | ✓ | ✓ | ✗ | ✓ | ✓ | ✓ | ✓ |
+| Skins | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 **Special cooldown rules:**
 
-- **Vehicle Mode:** every ground vehicle, helicopter, aircraft and boat loadout has **no cooldown**. You can respawn your vehicle as often as you like.
-- **WarZone:** the **MLRS kit** and the **light helicopters** have half their usual cooldown (MLRS, Black Hawk, Comanche, Ka-52: **10 min instead of 20**; Little Bird: **5 min instead of 10**).
+- **Vehicles:** every ground vehicle, helicopter, aircraft and boat loadout has **no cooldown**. You can respawn your vehicle as often as you like.
+- **Snipers:** a precision-only FFA. You can take pistols, rifles and snipers, recon FPV drones, EW gear, armor, refills and extras. Everything else is disabled.
+- **WarZone:** the **MLRS kit** and the **light helicopters** have shorter cooldowns (MLRS, Comanche, Ka-52: **10 min instead of 20**; Black Hawk: **10 min instead of 15**; Little Bird: **5 min instead of 10**).
 - **Gun Game:** you get your weapons from the Gun Game progression, not from loadouts. Refills, armor and extras still work.
-- **Admin drone rules:** admins can switch off **all tactical drones** or only the **tactical strike drones** (Strike FPV and Heavy bomber) for a match. Strategic drones are not affected.
+- **Admin drone rules:** admins can switch off **all tactical drones** or only the **tactical strike drones** (Strike FPV and Heavy bomber). Switching them off also destroys any that are already deployed. The rules last for the current match only. Strategic and interceptor drones are not affected.
 
 ---
 
@@ -61,22 +66,24 @@ Back to the [README](README.md).
 
 Weapons, armor, refills (except fuel), the **Grenades**, **Mines** and **Thumper** kits, thermal vision and skins work on **every map**. Everything else is limited to certain maps:
 
-| Loadout | Ind. 1 | Ind. 2 | Forest | DUGA | Village | Radar | Trenches | Hospital | Army Base | Wild West | Kombinat | Outpost | WarZone | Exclusion Zone |
-|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| RPG kit | ✓ | ✓ | ✓ | ✓ | · | ✓ | ✓ | ✓ | ✓ | · | ✓ | · | ✓ | ✓ |
-| C4 kit | ✓ | ✓ | ✓ | · | · | ✓ | ✓ | ✓ | ✓ | · | ✓ | · | ✓ | ✓ |
-| Mortar kit, TOW kit | ✓ | ✓ | ✓ | · | · | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | ✓ | ✓ |
-| Tactical drones, EW gear | ✓ | ✓ | · | · | · | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | ✓ | ✓ |
-| MLRS kit | ✓ | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ | ✓ |
-| Javelin kit, Igla kit | · | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ | ✓ |
-| Fuel refill | · | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ | ✓ |
-| Ground vehicles | · | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ | ✓ |
-| Heavy anti-air (Pantsir-S1) | · | · | · | · | · | · | · | · | · | · | · | · | ✓ | ✓ |
-| Assault / light attack helicopters | · | · | · | · | · | · | ✓ | · | ✓ | · | · | · | ✓ | ✓ |
-| Heavy attack / cargo helicopters | · | · | · | · | · | · | · | · | · | · | · | · | ✓ | ✓ |
-| Aircraft | · | · | · | · | · | · | · | · | · | · | · | · | ✓ | · |
-| Boats | · | · | · | · | · | · | · | · | · | · | · | · | ✓ | · |
-| Strategic drones, Iskander-M kit, Radar kit | · | · | · | · | · | · | · | · | · | · | · | · | ✓ | · |
+| Loadout | Ind. 1 | Ind. 2 | Forest | DUGA | Village | Radar | Trenches | Hospital | Army Base | Wild West | Kombinat | Outpost | WarZone | Exclusion Zone | Vertikal'-8 |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| RPG kit | ✓ | ✓ | ✓ | ✓ | · | ✓ | ✓ | ✓ | ✓ | · | ✓ | · | ✓ | ✓ | ✓ |
+| C4 kit | ✓ | ✓ | ✓ | · | · | ✓ | ✓ | ✓ | ✓ | · | ✓ | · | ✓ | ✓ | ✓ |
+| TOW kit | ✓ | ✓ | ✓ | · | · | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | ✓ | ✓ | ✓ |
+| Mortar kit | ✓ | ✓ | ✓ | · | · | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | ✓ | ✓ | · |
+| Tactical drones, EW gear | ✓ | ✓ | · | · | · | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | · | ✓ | ✓ | ✓ |
+| MLRS kit | ✓ | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ | ✓ | · |
+| Javelin kit, Igla kit | · | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ | · | · |
+| Fuel refill | · | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ | · | · |
+| Ground vehicles (except anti-air) | · | · | · | · | · | · | ✓ | · | ✓ | · | ✓ | · | ✓ | · | · |
+| Light anti-air (Gepard, LAV-AD) | · | · | · | · | · | · | ✓ | · | ✓ | · | · | · | ✓ | · | · |
+| Heavy anti-air (Pantsir-S1) | · | · | · | · | · | · | · | · | · | · | · | · | ✓ | · | · |
+| Assault / light attack helicopters | · | · | · | · | · | · | ✓ | · | ✓ | · | · | · | ✓ | · | · |
+| Heavy attack / cargo helicopters | · | · | · | · | · | · | · | · | · | · | · | · | ✓ | · | · |
+| Aircraft | · | · | · | · | · | · | · | · | · | · | · | · | ✓ | · | · |
+| Boats | · | · | · | · | · | · | · | · | · | · | · | · | ✓ | · | · |
+| Strategic and interceptor drones, Iskander-M kit, Radar kit | · | · | · | · | · | · | · | · | · | · | · | · | ✓ | · | · |
 
 > When no map is configured, all map restrictions are lifted.
 
@@ -92,7 +99,7 @@ Weapons, armor, refills (except fuel), the **Grenades**, **Mines** and **Thumper
 | Medical | 8 medkits, 32 armor plates |
 | Gear | Parachute (back slot), netherite pickaxe (Efficiency V, Unbreaking III), combat knife (boosted damage), 32 dirt |
 | Armor | Heavy armor in your selected camo (desert by default) |
-| **Trenches, Army Base, Kombinat, WarZone, Exclusion Zone** | + 2 fuel cells (large battery packs) |
+| **Trenches, Army Base, Kombinat, WarZone** | + 2 fuel cells (large battery packs) |
 | **WarZone** | + 3 obsidian, + artillery indicator |
 
 ---
@@ -112,7 +119,7 @@ You can't re-equip the armor type you're already wearing. Camos apply to heavy a
 
 ## Weapons
 
-Each weapon class shares one cooldown. The length depends on the weapon you took. Weapons are disabled in Vehicle Mode and Gun Game.
+Each weapon class shares one cooldown. The length depends on the weapon you took. Weapons are disabled in Vehicles mode and Gun Game. In Snipers mode only **pistols, rifles and snipers** are available.
 
 | Class | Weapon | Ammo topped up to | Cooldown |
 |---|---|---|---|
@@ -138,7 +145,7 @@ Each weapon class shares one cooldown. The length depends on the weapon you took
 
 ## Kits
 
-Each kit has its own cooldown. Kits are disabled in Vehicle Mode and Gun Game. See [Availability by map](#availability-by-map) for where each one works.
+Each kit has its own cooldown. Kits are disabled in Vehicles mode, Snipers mode and Gun Game. See [Availability by map](#availability-by-map) for where each one works.
 
 | Kit | You get | Cooldown |
 |---|---|---|
@@ -152,34 +159,58 @@ Each kit has its own cooldown. Kits are disabled in Vehicle Mode and Gun Game. S
 | **Javelin** | Javelin + 8 missiles | 10 min |
 | **Igla** | Igla 9K38 MANPADS + 8 anti-air missiles | 10 min |
 | **MLRS** | Deployable Type 63 MLRS + 8 AP, 8 HE, 4 cluster rockets, artillery indicator | 20 min (**10 min in WarZone**) |
-| **Radar** | Radar for air target display and tracking | 20 min |
+| **Radar** | Radar for air target display and tracking, plus an air-raid siren | 20 min |
 | **Iskander-M** | 1 Iskander-M ballistic missile (you'll need a launch site) | 20 min |
 
 ---
 
 ## Drones
 
-Drones are split into two pools, each with its own shared cooldown. Taking a drone replaces any other drone of the same pool you're carrying. Drones are disabled in Vehicle Mode and Gun Game.
+Drones come in two cooldown pools: **strategic + interceptor** drones share one, and **tactical** drones have their own. Drones are disabled in Vehicles mode and Gun Game. In Snipers mode only the **Recon FPV** drone is allowed.
 
 ### Strategic drones
 
-**WarZone map only.** Long-range UAVs flown from a launcher and a control tablet. Admin drone rules don't affect them.
+**WarZone map only.** Long-range UAVs. Every strategic loadout gives **2 drones** and the launchers and **UAV control tablet** they need. Taking a strategic drone replaces any other strategic drone you're carrying. Admin drone rules don't affect them.
+
+- **Light launchers and the tablet are kept.** You only get new ones (2 light launchers, 1 tablet) if you're carrying one or none.
+- **Heavy launchers are not kept.** Every strategic loadout removes your heavy launchers, and heavy drones come with 2 fresh ones.
+
+| Drone | Role | Launcher | Cooldown |
+|---|---|---|---|
+| **Orlan** | Recon | Light | 5 min |
+| **Sych-1** | Recon | Light | 5 min |
+| **Molniya-1** | Strike | Light | 5 min |
+| **Gerbera-1** | Recon / decoy | Light | 7 min |
+| **Hornet** | Strike | Light | 7 min |
+| **ZALA Kub-BLA** | Strike | Light | 7 min |
+| **Lancet-3** | Strike | Light | 7 min |
+| **Shahed-136** | Strike | Heavy | 10 min |
+| **Geran-2** | Strike | Heavy | 10 min |
+| **Bayraktar TB2** | Recon-strike, + 4 guided missiles | Heavy | 10 min |
+| **FP-1** | Strike | Heavy | 12 min |
+| **Geran-2 Seeker** | Strike | Heavy | 12 min |
+| **Geran-4** | Strike | Heavy | 13 min |
+| **Geran-4 Seeker** | Strike | Heavy | 15 min |
+| **UJ-25 Skyline** | Strike | Heavy | 15 min |
+
+### Interceptor drones
+
+**WarZone map only.** Drones for hunting down enemy drones. They **share the strategic cooldown**, but they only replace other interceptors, so you can carry interceptors and strategic drones at the same time. Alexa Spatium uses the same light launchers and tablet as the light strategic drones.
 
 | Drone | You get | Cooldown |
 |---|---|---|
-| **Orlan** | Orlan recon UAV, recon launcher, recon tablet | 5 min |
-| **ZALA Kub-BLA** | Kub-BLA loitering munition, strike launcher, strike tablet | 8 min |
-| **Shahed** | Shahed strike UAV, strike launcher, strike tablet | 10 min |
-| **Bayraktar TB2** | TB2 recon-strike UAV, recon launcher, recon tablet, 4 guided missiles | 10 min |
+| **Sting** | 4 interceptors, 2 monitors, 2 batteries | 5 min |
+| **P1-Sun** | 4 interceptors, 2 monitors, 2 batteries | 7 min |
+| **Alexa Spatium** | 2 interceptors, plus light launchers and tablet if needed | 8 min |
 
 ### Tactical drones
 
-Short-range drones flown through a monitor. Every tactical drone loadout comes with 2 monitors and 2 batteries. Admins can disable this pool for a match.
+Short-range drones flown through a monitor. Every tactical drone loadout comes with 2 monitors and 2 batteries. Admins can disable this pool.
 
 | Drone | You get | Cooldown |
 |---|---|---|
 | **Delivery** | 2 delivery drones, 2 extraction crates | 5 min |
-| **Recon FPV** | 8 recon drones | 8 min |
+| **Recon FPV** | 8 recon drones (also allowed in Snipers mode) | 8 min |
 | **Strike FPV** | 8 FPV drones, 8 mortar shells to drop | 10 min |
 | **Heavy bomber** | 2 heavy bomber drones, 16 mortar shells to drop | 10 min |
 
@@ -189,7 +220,7 @@ Strike FPV and Heavy bomber count as **strike drones**. Admins can switch these 
 
 ## Electronic warfare
 
-**One shared cooldown for all EW gear.** Available on the same maps as tactical drones. EW is disabled in Vehicle Mode and Gun Game. Powered EW gear comes with a battery.
+**One shared cooldown for all EW gear.** Available on the same maps as tactical drones. EW is disabled in Vehicles mode and Gun Game, but **allowed in Snipers mode**. Powered EW gear comes with a battery.
 
 | Loadout | You get | Cooldown |
 |---|---|---|
@@ -205,7 +236,7 @@ Strike FPV and Heavy bomber count as **strike drones**. Admins can switch these 
 
 ## Refills
 
-Refills top you up to a fixed amount and do nothing if you're already full.
+Refills top you up to a fixed amount and do nothing if you're already full. In Snipers mode the shotgun ammo and fuel refills are disabled.
 
 | Refill | Gives | Cooldown |
 |---|---|---|
@@ -235,7 +266,7 @@ Refills top you up to a fixed amount and do nothing if you're already full.
 
 ## Ground vehicles
 
-**One shared cooldown for all ground vehicles.** Available on Trenches, Army Base, Kombinat and WarZone. **No cooldown in Vehicle Mode.** Most vehicles also come with 8 smoke charges.
+**One shared cooldown for all ground vehicles.** Available on Trenches, Army Base, Kombinat and WarZone (anti-air vehicles have their own map limits, see [Availability by map](#availability-by-map)). **No cooldown in Vehicles mode.** Most vehicles also come with 8 smoke charges.
 
 ### Main battle tanks
 
@@ -300,7 +331,7 @@ Autocannon shells, coaxial MG ammo and 16 ATGMs (LAV-150: autocannon only). Spru
 
 ## Helicopters
 
-**One shared cooldown for all helicopters.** Every helicopter comes with 16 flares. **No cooldown in Vehicle Mode.**
+**One shared cooldown for all helicopters.** Every helicopter comes with 16 flares. **No cooldown in Vehicles mode.**
 
 | Helicopter | You get | Maps | Cooldown |
 |---|---|---|---|
@@ -316,7 +347,7 @@ Autocannon shells, coaxial MG ammo and 16 ATGMs (LAV-150: autocannon only). Spru
 
 ## Aircraft
 
-**One shared cooldown for all aircraft.** **WarZone map only.** **No cooldown in Vehicle Mode.** Unless noted, every aircraft gets cannon shells (128 AP + 128 HE) and 16 flares.
+**One shared cooldown for all aircraft.** **WarZone map only.** **No cooldown in Vehicles mode.** Unless noted, every aircraft gets cannon shells (128 AP + 128 HE) and 16 flares.
 
 | Role | Aircraft | Weapons | Cooldown |
 |---|---|---|---|
@@ -355,7 +386,7 @@ Autocannon shells, coaxial MG ammo and 16 ATGMs (LAV-150: autocannon only). Spru
 
 ## Boats
 
-**One shared cooldown for both boats.** **WarZone map only.** **No cooldown in Vehicle Mode.**
+**One shared cooldown for both boats.** **WarZone map only.** **No cooldown in Vehicles mode.**
 
 | Boat | You get | Cooldown |
 |---|---|---|

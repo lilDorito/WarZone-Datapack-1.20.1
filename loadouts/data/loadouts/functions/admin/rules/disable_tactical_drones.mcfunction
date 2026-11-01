@@ -5,5 +5,7 @@ clear @a sbw_ew_addon:recon_drone
 clear @a sbw_ew_addon:heavy_bomber_drone
 clear @a sbw_ew_addon:delivery_drone
 
+function loadouts:admin/rules/kill_tactical_drones
+
 tellraw @a {"text":"[>] Tactical drone deployment disabled for this match","color":"gold","bold":true}
 playsound entity.experience_orb.pickup master @a ~ ~ ~ 1 1

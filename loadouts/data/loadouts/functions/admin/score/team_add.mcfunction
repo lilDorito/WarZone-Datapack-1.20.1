@@ -1,0 +1,16 @@
+execute if entity @s[team=Red] run scoreboard players add #Red team_pts 1
+execute if entity @s[team=Blue] run scoreboard players add #Blue team_pts 1
+execute if entity @s[team=Green] run scoreboard players add #Green team_pts 1
+execute if entity @s[team=Yellow] run scoreboard players add #Yellow team_pts 1
+execute if entity @s[team=Aqua] run scoreboard players add #Aqua team_pts 1
+execute if entity @s[team=Gold] run scoreboard players add #Gold team_pts 1
+execute if entity @s[team=LightPurple] run scoreboard players add #LightPurple team_pts 1
+execute if entity @s[team=White] run scoreboard players add #White team_pts 1
+execute if entity @s[team=LightRed] run scoreboard players add #LightRed team_pts 1
+execute if entity @s[team=DarkBlue] run scoreboard players add #DarkBlue team_pts 1
+execute if entity @s[team=DarkGreen] run scoreboard players add #DarkGreen team_pts 1
+execute if entity @s[team=DarkPurple] run scoreboard players add #DarkPurple team_pts 1
+execute if entity @s[team=DarkAqua] run scoreboard players add #DarkAqua team_pts 1
+execute if entity @s[team=Gray] run scoreboard players add #Gray team_pts 1
+execute if entity @s[team=DarkGray] run scoreboard players add #DarkGray team_pts 1
+execute if entity @s[team=Black] run scoreboard players add #Black team_pts 1

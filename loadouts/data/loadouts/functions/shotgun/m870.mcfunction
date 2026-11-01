@@ -1,17 +1,22 @@
-execute unless score #game match_mode matches 1..6 run tellraw @s {"text":"[×] Loadout commands are disabled until the match starts.","color":"red"}
-execute unless score #game match_mode matches 1..6 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
-execute unless score #game match_mode matches 1..6 run return 0
+execute unless score #game match_mode matches 1..5 run tellraw @s {"text":"[×] Loadout commands are disabled until the match starts.","color":"red"}
+execute unless score #game match_mode matches 1..5 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute unless score #game match_mode matches 1..5 run return 0
 
-execute if score #game match_mode matches 6 if score #game wz_state matches 0 run tellraw @s {"text":"[×] Loadout commands are disabled until both beacons are placed.","color":"red"}
-execute if score #game match_mode matches 6 if score #game wz_state matches 0 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
-execute if score #game match_mode matches 6 if score #game wz_state matches 0 run return 0
+execute if score #game match_mode matches 5 if score #game wz_state matches 0 run tellraw @s {"text":"[×] Loadout commands are disabled until both beacons are placed.","color":"red"}
+execute if score #game match_mode matches 5 if score #game wz_state matches 0 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute if score #game match_mode matches 5 if score #game wz_state matches 0 run return 0
 
-execute if score #game match_mode matches 4 run tellraw @s {"text":"[×] Weapon loadouts are disabled in Vehicle Mode!","color":"red"}
+execute if score #game variant matches 2 run tellraw @s {"text":"[×] This loadout is disabled in Snipers mode!","color":"red"}
+execute if score #game variant matches 2 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute if score #game variant matches 2 run return 0
+
+execute if score #game variant matches 1 run tellraw @s {"text":"[×] Weapon loadouts are disabled in Vehicles mode!","color":"red"}
+execute if score #game variant matches 1 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute if score #game variant matches 1 run return 0
+
+execute if score #game match_mode matches 4 run tellraw @s {"text":"[×] Weapon loadouts are disabled in Gun Game!","color":"red"}
 execute if score #game match_mode matches 4 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
 execute if score #game match_mode matches 4 run return 0
-execute if score #game match_mode matches 5 run tellraw @s {"text":"[×] Weapon loadouts are disabled in Gun Game!","color":"red"}
-execute if score #game match_mode matches 5 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
-execute if score #game match_mode matches 5 run return 0
 
 execute as @s[scores={shotgun_cd=1..}] run scoreboard players operation @s shotgun_cd_sec = @s shotgun_cd
 execute as @s[scores={shotgun_cd=1..}] run scoreboard players operation @s shotgun_cd_sec /= ticks_divisor const

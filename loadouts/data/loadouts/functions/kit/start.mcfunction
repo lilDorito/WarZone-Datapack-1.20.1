@@ -1,6 +1,6 @@
-execute unless score #game match_mode matches 1..6 run tellraw @s {"text":"[×] Loadout commands are disabled until the match starts.","color":"red"}
-execute unless score #game match_mode matches 1..6 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
-execute unless score #game match_mode matches 1..6 run return 0
+execute unless score #game match_mode matches 1..5 run tellraw @s {"text":"[×] Loadout commands are disabled until the match starts.","color":"red"}
+execute unless score #game match_mode matches 1..5 run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
+execute unless score #game match_mode matches 1..5 run return 0
 
 execute if entity @s[tag=has_started] run tellraw @s {"text":"[×] You have already received your start kit!","color":"red"}
 execute if entity @s[tag=has_started] run playsound minecraft:block.note_block.bass master @s ~ ~ ~ 1 1
@@ -28,7 +28,6 @@ execute if score #map map matches 7 run give @s superbwarfare:large_battery_pack
 execute if score #map map matches 9 run give @s superbwarfare:large_battery_pack{Energy:20000000} 2
 execute if score #map map matches 11 run give @s superbwarfare:large_battery_pack{Energy:20000000} 2
 execute if score #map map matches 13 run give @s superbwarfare:large_battery_pack{Energy:20000000} 2
-execute if score #map map matches 14 run give @s superbwarfare:large_battery_pack{Energy:20000000} 2
 
 execute if score #map map matches 13 run give @s minecraft:obsidian 3
 
