@@ -132,6 +132,7 @@ scoreboard objectives add pad_k1 dummy
 scoreboard objectives add pad_k2 dummy
 scoreboard objectives add pad_d1 dummy
 scoreboard objectives add pad_d2 dummy
+scoreboard objectives add gid dummy
 
 # Values
 scoreboard players set ticks_divisor const 20

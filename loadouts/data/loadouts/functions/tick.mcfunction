@@ -85,6 +85,7 @@ execute if score #ab_timer global matches 20 run function loadouts:actionbar
 execute if score #ab_timer global matches 20 run function loadouts:admin/scoreboard/update_winning
 execute if score #ab_timer global matches 20 run function loadouts:admin/scoreboard/update_map
 execute if score #ab_timer global matches 20 run function loadouts:admin/scoreboard/update_mode
+execute if score #ab_timer global matches 20 run function loadouts:admin/ghost/sync_all
 execute if score #ab_timer global matches 20 run scoreboard players set #ab_timer global 0
 
 # Thermal vision

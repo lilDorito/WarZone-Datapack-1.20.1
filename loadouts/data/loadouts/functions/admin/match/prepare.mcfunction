@@ -51,3 +51,8 @@ tag @a remove has_radio
 scoreboard players reset @a spawn_immune
 effect clear @a minecraft:resistance
 clear @a
+
+execute in minecraft:overworld run forceload add 0 0
+kill @e[type=text_display,tag=ghost]
+scoreboard players reset * gid
+scoreboard players set #next gid 0
